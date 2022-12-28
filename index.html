@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,26 @@
     <title>Twitter</title>
 </head>
 
-    <body>
-        <div class="login-form">
-            <h1>Login</h1>
-            <input type="Full Name" placeholder="Full Name" class="input"><br><br>
-            <input type="E-mail" placeholder="E-mail" class="input"><br><br>
-            <input type="Password" placeholder="Password" class="input"><br><br>
-            <p>Forget Password?</p><br>
+<body>
+    <h1>Login</h1>
+    <form id="login-form" action="/login" method="post">
+      <label for="username">Username:</label><br>
+      <input type="text" id="login-username" name="username" placeholder="Username"><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="login-password" name="password" placeholder="Password"><br><br>
+      <button type="submit" value="Login">Login</button>
+    </form> 
+    <br><br>
+    <h1>Signup</h1>
+    <form id="signup-form" action="/signup" method="post">
+      <label for="username">Username:</label><br>
+      <input type="text" id="signup-username" name="username" placeholder="Username"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="signup-email" name="email" placeholder="E-mail"><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="signup-password" placeholder="Password" name="password">
+      <input type="password" placeholder="Re-enter Password" name="password"><br>
+      <br><button type="submit">Sign-in</button>
+    </form> 
 
-            <button type="submit">submit</button><br>
-
-            <p>You are already logged in then <a href=""> click here</a></p>
-
-        </div>
-
-    </body>
 </html>
