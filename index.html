@@ -10,24 +10,43 @@
 </head>
 
 <body>
-    <h1>Login</h1>
-    <form id="login-form" action="/login" method="post">
-      <label for="username">Username:</label><br>
-      <input type="text" id="login-username" name="username" placeholder="Username"><br>
+    <div>
+        <h1>Join Twitter today</h1>
+        <h2>Sign-up</h2>
+        <div class="alert">Your message has been sent</div>
+        <form id="signup-form">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="signup_name" placeholder="Name" required><br>
+          <label for="phone">Phone:</label><br>
+          <input type="tel" id="phone" name="signup_phone" placeholder="Phone" required><br>
+          <a href="#">use email instead</a>
+          <br><label for="email">Email:</label><br>
+          <input type="email" id="email" name="signup_email" placeholder="E-mail" required><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" placeholder="Password" name="password" required>
+          <input type="password" placeholder="Re-enter Password" name="re-password" required>
+          <h4>Date of Birth</h4>
+          <p>This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
+          <input type="date" id="dateOfBirth" name="dateOfBirth">
+          <br><br><button type="submit">Sign-up</button><br>
+          Have an account alredy? <button type="button" onclick="showLoginForm()" style="background: none;" > Login </button>
+        </div>
+        <div id="login-form" style="display:none">
+            <h1>Sign in to Twitter</h1>
+            <h2>Login</h2>
+    <form id="login-form">
+      <label for="login_username">Username:</label><br>
+      <input type="text" id="login-username" name="login_username" placeholder="Username/Phone/E-mail" ><br>
       <label for="password">Password:</label><br>
-      <input type="password" id="login-password" name="password" placeholder="Password"><br><br>
-      <button type="button">Login</button>
+      <input type="password" id="login-password" placeholder="Password" ><br><br>
+      <button type="button">Login</button><br>
+      Dont have a account?<button type="button" onclick="showSignupForm()" style="background: none;" >Sign up</button>
     </form> 
-    <br><br>
-    <h1>Signup</h1>
-    <form id="signup-form" action="/signup" method="post">
-      <label for="username">Username:</label><br>
-      <input type="text" id="signup-username" name="username" placeholder="Username"><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="signup-email" name="email" placeholder="E-mail"><br>
-      <label for="password">Password:</label><br>
-      <input type="password" id="signup-password" placeholder="Password" name="password">
-      <input type="password" placeholder="Re-enter Password" name="password"><br>
-      <br><button type="button">Sign-in</button>
+</div>
+    <br>
+    
     </form> 
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script></script>
+    <script src="index.js"></script>
+    </body>
 </html>
