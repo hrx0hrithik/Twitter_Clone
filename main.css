@@ -154,7 +154,7 @@ a.profile-btn {
 }
 
 .profile-btn:hover {
-  background: var(--itemBackground);
+  background: #eff3f4;
 }
 
 .profile-info {
