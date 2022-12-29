@@ -86,7 +86,7 @@ body
 }
 .container p
 {
-   font-size: .7rem; 
+   font-size:.7rem; 
    color: rgb(138,136,136);
 }
 .container p a
@@ -110,10 +110,7 @@ h2
 {
   font-size: 28px;
 }
-.box-two p
-{
-  font-size: 15px;
-}
+
 
 
 
