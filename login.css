@@ -1,6 +1,6 @@
 body
 { 
-  background-color: #999;
+  background-color: rgb(219,217,217);
 }
 .container
 {
@@ -9,9 +9,9 @@ body
     left: 50%;
     transform: translate(-50%,-50%);
     background:#fff;
-    width: 600px;
-    height: 647px;
-    border-radius: 14px;
+    width: 550px;
+    height: 650px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,9 +54,6 @@ body
    color: #00acee; 
    font-size: 1.8rem;
 }
-.box-two{
-  margin-top: -3vh;
-}
 .box-two input
 {
     position: relative;
@@ -84,12 +81,8 @@ body
 }
 .box-two .next-btn
 {
-  background-color:rgb(15, 20, 25) ; 
+  background-color:#121212 ; 
   color: #fff; 
-}
-.box-two .next-btn:hover
-{
-  background-color:rgb(39, 44, 48) ; 
 }
 .container p
 {
@@ -117,9 +110,21 @@ h2
 {
   font-size: 28px;
 }
-h5{
-  margin: 10px 0;
+h5 
+{
+  width: 55%; 
+  text-align: center; 
+  border-bottom: 1px solid grey; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+h5 span 
+{ 
+   background:#fff; 
+   padding:0 10px; 
 }
+
 
 
 
