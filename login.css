@@ -1,0 +1,116 @@
+body
+{ 
+  background-color: rgb(219,217,217);
+}
+.container
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    width: 550px;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: 0 10px rgb(110,110,110,.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box, .box button
+{
+    display: flex;
+    align-items: center;
+}
+
+.box
+{
+    width: 300px;
+    height: 240px;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: space-evenly;
+}
+.box button
+{
+  width: 300px; 
+  height: 40px;
+  background-color: #fff ; 
+  outline: none;
+  font-weight: bold;
+  border: 1px solid rgb(211,210,210);
+  border-radius: 20px;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+.box-one button img
+{
+  margin: 0 .5rem;   
+}
+.box-one i
+{
+   color: #00acee; 
+   font-size: 1.8rem;
+}
+.box-two input
+{
+    position: relative;
+    width: 300px;
+    height: 55px;
+    outline: none;
+    border: 1px solid rgb(211,210,210);
+    border-radius: 4px;
+    padding-left: 10px;
+
+}
+.box-two input label
+{
+    position:absolute;
+    top: 0;
+}
+.box-two input::placeholder
+{
+  font-size: 1rem;
+
+}
+.box-two input:focus
+{
+    border: 1px solid #00acee;
+}
+.box-two .next-btn
+{
+  background-color:#121212 ; 
+  color: #fff; 
+}
+.container p
+{
+   font-size: .7rem; 
+   color: rgb(138,136,136);
+}
+.container p a
+{
+  text-decoration: none;
+  color: #44b7e4;
+}
+.box-two .forget:hover
+{
+  background-color:lightgray;
+}
+.box-one .apple:hover
+{
+    background-color:lightgray; 
+}
+.box-one .google:hover
+{
+    background-color:whitesmoke;
+}
+h2
+{
+  font-size: 28px;
+}
+
+
+
