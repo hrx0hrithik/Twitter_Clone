@@ -1,13 +1,4 @@
 
-
-function showLoginForm() {
-    document.getElementById("login-form").style.display = "block";
-    document.getElementById("signup-form").style.display = "none";
-  }
-  function showSignupForm() {
-    document.getElementById("login-form").style.display = "none";
-    document.getElementById("signup-form").style.display = "block";
-  }
 // Initialize Firebase (ADD YOUR OWN DATA)
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
