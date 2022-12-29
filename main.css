@@ -7,15 +7,13 @@
   --background: #fff;
   --brandBackground: #1d9bf020;
   --brandColor: #1d9bf0;
-  --itemBackground: #1d9bf0;
+  --itemBackground: #d9d9d920;
   --colorPrimary: #000;
   --colorSecondary: #6e767d;
   --colorWhite: #fff;
   --tweetBtnBg: #1d9bf0;
 }
-.sidebar{
-  position: sticky;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,9 +21,11 @@
   transition: 0.2s ease;
   user-select: none;
 }
+
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 a {
   text-decoration: none;
   color: var(--colorPrimary);
@@ -42,7 +42,7 @@ body {
   padding: 0 3em;
 }
 
-div .sidebar {
+nav.sidebar {
   height: 100%;
   width: 260px;
   background: var(--background);
@@ -92,7 +92,7 @@ div .sidebar {
 }
 
 .nav-item:hover {
-  background-color: var(--itemBackground);
+  background: var(--itemBackground);
 }
 
 .nav-item .item-icon{
@@ -125,7 +125,6 @@ a.tweet-btn {
   border-radius: 50px;
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 50px;
 }
 
 a.tweet-btn:hover {
@@ -189,26 +188,11 @@ img.profile-img {
   display: none;
   z-index: 100;
 }
+
 .sub-items-box.active {
   display: block;
 }
 
-.sub-menu {
-  position: absolute;
-  bottom: 20px;
-  left: 0px;
-  background: var(--background);
-  box-shadow: 0 0 10px #fff5;
-  width: 190px;
-  border-radius: 5px;
-  overflow: hidden;
-  display: none;
-  z-index: 100;
-}
-
-.sub-menu.active {
-  display: block;
-}
 .sub-item {
   padding: 12px;
   display: flex;
@@ -218,7 +202,7 @@ img.profile-img {
 }
 
 .sub-item:hover {
-  background: #077cc9;
+  background: #1d9bf0;
 }
 
 .sub-item .item-icon {
@@ -238,7 +222,6 @@ img.profile-img {
   margin-top: 2px;
   border-top: 1px solid #fff2;
 }
-
 .overlay {
   position: absolute;
   inset: 0;
@@ -279,57 +262,6 @@ img.profile-img {
   }
   a.tweet-btn .text {
     display: none;
-    z-index: 100;
-  }
-  .sub-items-box.active {
-    display: block;
-  }
-  
-
-  .sub-menu {
-    position: absolute;
-    bottom: 20px;
-    left: 0px;
-    background: var(--background);
-    box-shadow: 0 0 10px #fff5;
-    width: 190px;
-    border-radius: 5px;
-    overflow: hidden;
-    display: none;
-    z-index: 100;
-  }
-  
-  .sub-menu.active {
-    display: block;
-  }
-  .sub-item {
-    padding: 12px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .sub-item:hover {
-    background: #1d9bf0;
-  }
-  
-  .subs-item .item-icon {
-    margin-right: 10px;
-  }
-  
-  .sub-item .item-icon ion-icon {
-    font-size: 18px;
-  }
-  
-  .sub-item .item-link {
-    font-size: 14px;
-  }
-  
-  .config {
-    padding-top: 2px;
-    margin-top: 2px;
-    border-top: 1px solid #fff2;
   }
   .profile-info > div {
     display: none;
