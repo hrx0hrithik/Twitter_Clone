@@ -1,9 +1,9 @@
 :root {
-    --background: #000;
+    --background: #fff;
     --brandBackground: #1d9bf020;
-    --brandColor: #d9d9d9;
+    --brandColor: #1d9bf0;
     --itemBackground: #d9d9d920;
-    --colorPrimary: #d9d9d9;
+    --colorPrimary: #000;
     --colorSecondary: #6e767d;
     --colorWhite: #fff;
     --tweetBtnBg: #1d9bf0;
@@ -196,7 +196,7 @@
   }
   
   .sub-item:hover {
-    background: #15181c;
+    background: #1d9bf0;
   }
   
   .sub-item .item-icon {
