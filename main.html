@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-  
+
 
   <div class="sidebar">
     <ul class="navbar">
@@ -137,7 +139,7 @@
     </ul>
 
     <a href="#" class="profile-btn" id="profile_info">
-      <div class="profile-info" >
+      <div class="profile-info">
         <img src="./image/messi.jfif" alt="" class="profile-img" width="35" height="35">
         <div>
           <p class="name">Lionel Messi</p>
@@ -148,17 +150,17 @@
         <ion-icon name="ellipsis-horizontal"></ion-icon>
       </div>
     </a>
-      <div class="sub-menu">
+    <div class="sub-menu">
+      <ul>
+        <li class="sub-item">
+          <a href="index.html" class="item-link">Log out</a>
+        </li>
         <ul>
           <li class="sub-item">
-            <a href="index.html" class="item-link">Log out</a>
+            <a href="signup.html" class="item-link">Add account</a>
           </li>
-          <ul>
-            <li class="sub-item">
-              <a href="signup.html" class="item-link">Add account</a>
-            </li>
-          </div>
-        </div>
+    </div>
+  </div>
 
   <div class="overlay"></div>
 
@@ -174,15 +176,16 @@
 
   <!--TWEET BOX START-->
   <div class="tweet-box">
-<div class="feeds-content">
-  <div class="feeds-header" style="padding-top: 6.5rem">
-    <div class="header-top">
-      <h4>Home</h4>
-      <i class="far fa-star"></i>
+    <div class="feeds-content">
+      <div class="feeds-header" style="padding-top:.5rem">
+        <div class="header-top">
+          <h4>Home</h4>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="main.js"></script>
