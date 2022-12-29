@@ -104,6 +104,9 @@ nav.sidebar {
 .nav-item .item-icon{
   margin-right: 15px;
 }
+.nav-item .item-icon:hover{
+  color: #1d9bf0;
+}
 
 .nav-item .item-icon ion-icon {
   font-size: 26px;
