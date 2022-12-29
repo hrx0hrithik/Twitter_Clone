@@ -7,17 +7,11 @@
   --background: #fff;
   --brandBackground: #1d9bf020;
   --brandColor: #1d9bf0;
-  --itemBackground: #d9d9d920;
+  --itemBackground: #1d9bf0;
   --colorPrimary: #000;
   --colorSecondary: #6e767d;
   --colorWhite: #fff;
   --tweetBtnBg: #1d9bf0;
-}
-
-.sidebar,.tweet-box{
-  width: auto;
-  float: left;
- /* border: 2px solid #000;*/
 }
 .sidebar{
   position: sticky;
@@ -98,7 +92,7 @@ div .sidebar {
 }
 
 .nav-item:hover {
-  background: var(--itemBackground);
+  background-color: var(--itemBackground);
 }
 
 .nav-item .item-icon{
@@ -224,7 +218,7 @@ img.profile-img {
 }
 
 .sub-item:hover {
-  background: #1d9bf0;
+  background: #077cc9;
 }
 
 .sub-item .item-icon {
@@ -285,13 +279,13 @@ img.profile-img {
   }
   a.tweet-btn .text {
     display: none;
-<<<<<<< Updated upstream
     z-index: 100;
   }
   .sub-items-box.active {
     display: block;
   }
   
+
   .sub-menu {
     position: absolute;
     bottom: 20px;
@@ -320,7 +314,7 @@ img.profile-img {
     background: #1d9bf0;
   }
   
-  .sub-item .item-icon {
+  .subs-item .item-icon {
     margin-right: 10px;
   }
   
@@ -336,11 +330,9 @@ img.profile-img {
     padding-top: 2px;
     margin-top: 2px;
     border-top: 1px solid #fff2;
-=======
   }
   .profile-info > div {
     display: none;
->>>>>>> Stashed changes
   }
   a.profile-btn .option-icon {
     display: none;
