@@ -24,7 +24,9 @@ body
     display: flex;
     align-items: center;
 }
-
+.box-one{
+  margin-top: -90px;
+}
 .box
 {
     width: 300px;
@@ -47,7 +49,7 @@ body
 }
 .box-one button img
 {
-  margin: 0 .5rem;   
+  margin: 0.5rem;   
 }
 .box-one i
 {
@@ -116,8 +118,8 @@ h5
   text-align: center; 
   border-bottom: 1px solid grey; 
   line-height: 0.1em;
-  margin-top: 10px; 
-  margin-bottom: -1vh; 
+  margin-top: 1.2vh; 
+  margin-bottom: 0.4vh; 
   font-size: 15px
 } 
 
