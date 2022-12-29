@@ -7,7 +7,7 @@
   --background: #fff;
   --brandBackground: #1d9bf020;
   --brandColor: #1d9bf0;
-  --itemBackground: #d9d9d920;
+  --itemBackground: #1d9bf0;
   --colorPrimary: #000;
   --colorSecondary: #6e767d;
   --colorWhite: #fff;
@@ -276,3 +276,67 @@ img.profile-img {
     width: 55px;
   }
 }
+
+
+
+
+
+.menu {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  background: var(--background);
+  box-shadow: 0 0 10px #fff5;
+  width: 190px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+  z-index: 100;
+}
+
+.menu.active {
+  display: block;
+}
+
+.titem {
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.titem:hover {
+  background: #1d9bf0;
+}
+
+.titem .item-icon {
+  margin-right: 10px;
+}
+
+.titem .item-icon ion-icon {
+  font-size: 18px;
+}
+
+.titem .item-link {
+  font-size: 14px;
+}
+
+.config {
+  padding-top: 2px;
+  margin-top: 2px;
+  border-top: 1px solid #fff2;
+}
+.profile-info > div {
+  display: none;
+}
+a.profile-btn .option-icon {
+  display: none;
+}
+img.profile-img {
+  margin-right: 0;
+}
+a.profile-btn {
+  width: 55px;
+}
+
