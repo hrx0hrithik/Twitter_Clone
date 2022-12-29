@@ -182,11 +182,26 @@
     display: none;
     z-index: 100;
   }
-  
   .sub-items-box.active {
     display: block;
   }
   
+  .sub-menu {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background: var(--background);
+    box-shadow: 0 0 10px #fff5;
+    width: 190px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    z-index: 100;
+  }
+  
+  .sub-menu.active {
+    display: block;
+  }
   .sub-item {
     padding: 12px;
     display: flex;

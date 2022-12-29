@@ -1,0 +1,145 @@
+body
+{ 
+  background-color: #999;
+}
+.container
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    width: 600px;
+    height: 650px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box, .box button
+{
+    display: flex;
+    align-items: center;
+}
+.box-one{
+  margin-top: -80px;
+}
+.box
+{
+    width: 300px;
+    height: 240px;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: space-evenly;
+}
+.box button
+{
+  width: 300px; 
+  height: 40px;
+  background-color: #fff ; 
+  outline: none;
+  font-weight: bold;
+  border: 1px solid rgb(211,210,210);
+  border-radius: 20px;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+.box-one button img
+{
+  margin: 0.5rem;   
+}
+.box-one i
+{
+   color: #00acee; 
+   font-size: 1.8rem;
+}
+.box-two input
+{
+    position: relative;
+    width: 300px;
+    height: 55px;
+    outline: none;
+    border: 1px solid rgb(211,210,210);
+    border-radius: 4px;
+    padding-left: 10px;
+
+}
+.box-two input label
+{
+    position:absolute;
+    top: 0;
+}
+.box-two input::placeholder
+{
+  font-size: 1rem;
+
+}
+.box-two input:focus
+{
+    border: 1px solid #00acee;
+}
+.box-two .next-btn
+{
+  background-color:#121212 ; 
+  color: #fff; 
+}
+.box-two .next-btn:hover
+{
+  background-color:rgb(39,44,48); 
+   
+}
+.btn:hover{
+  cursor: pointer;
+}
+.container p
+{
+   font-size:0.9rem; 
+   color: rgb(138,136,136);
+}
+.container p a
+{
+  text-decoration: none;
+  color: #44b7e4;
+}
+.box-two .forget:hover
+{
+  background-color:whitesmoke;
+}
+.box-one .apple:hover
+{
+    background-color:whitesmoke; 
+}
+.box-one .google:hover
+{
+    background-color:whitesmoke;
+}
+h2
+{
+  font-size: 28px;
+}
+h5 
+{
+  width: 55%; 
+  text-align: center; 
+  border-bottom: 1px solid grey; 
+  line-height: 0.1em;
+  margin-top: 1.2vh; 
+  margin-bottom: 0.4vh; 
+  font-size: 15px
+} 
+
+h5 span 
+{ 
+   background:#fff; 
+   padding:0 10px; 
+}
+
+
+@media screen and (max-width: 690px){
+  body{
+    background-color: #fff;
+  };
+}

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
+
 <body>
   <nav class="sidebar">
     <ul class="navbar">
@@ -68,7 +69,9 @@
         </a>
         <a href="#" class="item-link">More</a>
       </li>
-      <a href="#" class="tweet-btn"><ion-icon name="pencil"></ion-icon> <div class="text">Tweet</div></a>
+      <a href="#" class="tweet-btn"><ion-icon name="pencil"></ion-icon>
+        <div class="text">Tweet</div>
+      </a>
       <div class="sub-items-box">
         <ul>
           <li class="sub-item">
@@ -132,7 +135,7 @@
     </ul>
 
     <a href="#" class="profile-btn">
-      <div class="profile-info">
+      <div class="profile-info" id="profile_info">
         <img src="./image/messi.jfif" alt="" class="profile-img" width="35" height="35">
         <div>
           <p class="name">Lionel Messi</p>
@@ -142,13 +145,24 @@
       <div class="option-icon">
         <ion-icon name="ellipsis-horizontal"></ion-icon>
       </div>
+      <div class="sub-menu">
+        <ul>
+          <li class="sub-item">
+            <a href="index.html" class="item-link">Log out</a>
+          </li>
+          <ul>
+            <li class="sub-item">
+              <a href="signup.html" class="item-link">Add account</a>
+            </li>
+      </div>
     </a>
   </nav>
 
   <div class="overlay"></div>
-  
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
