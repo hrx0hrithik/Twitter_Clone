@@ -98,11 +98,11 @@ body
 }
 .box-two .forget:hover
 {
-  background-color:lightgray;
+  background-color:whitesmoke;
 }
 .box-one .apple:hover
 {
-    background-color:lightgray; 
+    background-color:whitesmoke; 
 }
 .box-one .google:hover
 {
