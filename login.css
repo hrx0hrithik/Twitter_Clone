@@ -1,6 +1,6 @@
 body
 { 
-  background-color: rgb(219,217,217);
+  background-color: #999;
 }
 .container
 {
@@ -9,9 +9,9 @@ body
     left: 50%;
     transform: translate(-50%,-50%);
     background:#fff;
-    width: 550px;
+    width: 600px;
     height: 650px;
-    border-radius: 20px;
+    border-radius: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,7 +116,8 @@ h5
   text-align: center; 
   border-bottom: 1px solid grey; 
   line-height: 0.1em;
-  margin: 10px 0 20px; 
+  margin-top: 10px; 
+  margin-bottom: -1vh; 
 } 
 
 h5 span 
