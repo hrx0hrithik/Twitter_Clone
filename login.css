@@ -9,9 +9,9 @@ body
     left: 50%;
     transform: translate(-50%,-50%);
     background:#fff;
-    width: 550px;
-    height: 650px;
-    border-radius: 20px;
+    width: 600px;
+    height: 647px;
+    border-radius: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +54,9 @@ body
    color: #00acee; 
    font-size: 1.8rem;
 }
+.box-two{
+  margin-top: -3vh;
+}
 .box-two input
 {
     position: relative;
@@ -81,8 +84,12 @@ body
 }
 .box-two .next-btn
 {
-  background-color:#121212 ; 
+  background-color:rgb(15, 20, 25) ; 
   color: #fff; 
+}
+.box-two .next-btn:hover
+{
+  background-color:rgb(39, 44, 48) ; 
 }
 .container p
 {
@@ -110,7 +117,9 @@ h2
 {
   font-size: 28px;
 }
-
+h5{
+  margin: 10px 0;
+}
 
 
 
