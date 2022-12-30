@@ -60,6 +60,8 @@ nav.sidebar {
   justify-content: flex-start;
   align-items: flex-start;
   z-index: 100;
+  border-right: 1px solid #d4d8d9;
+
 }
 
 .navbar-brand {
@@ -90,13 +92,20 @@ nav.sidebar {
   align-items: center;
   cursor: pointer;
 }
-
 .nav-item:hover {
-  background: var(--itemBackground);
+  background:#eff3f4;
+}
+
+.nav-item .item-link:hover {
+  /* background: var(--colorSecondary); */
+  color:#1d9bf0;
 }
 
 .nav-item .item-icon{
   margin-right: 15px;
+}
+.nav-item .item-icon:hover{
+  color: #1d9bf0;
 }
 
 .nav-item .item-icon ion-icon {
@@ -148,7 +157,7 @@ a.profile-btn {
 }
 
 .profile-btn:hover {
-  background: var(--itemBackground);
+  background: #eff3f4;
 }
 
 .profile-info {
@@ -234,7 +243,7 @@ img.profile-img {
   display: block;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 800px) { //Allways write media quries at the end
   nav.sidebar {
     width: 75px;
   }
@@ -272,10 +281,8 @@ img.profile-img {
   img.profile-img {
     margin-right: 0;
   }
-  a.profile-btn {
-    width: 55px;
-  }
-}
+   
+}*/
 
 
 
@@ -327,16 +334,7 @@ img.profile-img {
   margin-top: 2px;
   border-top: 1px solid #fff2;
 }
-.profile-info > div {
-  display: none;
-}
-a.profile-btn .option-icon {
-  display: none;
-}
+
 img.profile-img {
   margin-right: 0;
 }
-a.profile-btn {
-  width: 55px;
-}
-

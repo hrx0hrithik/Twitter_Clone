@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home / Twitter</title>
   <link rel="shortcut icon" href="./image/twitter.jfif" type="image/jfif">
-
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -16,7 +15,7 @@
 <body>
 
 
-  <nav class="sidebar">
+  <div class="sidebar">
     <ul class="navbar">
       <li class="navbar-brand">
         <a href="#">
@@ -137,13 +136,22 @@
     </ul>
 
     <a href="#" class="profile-btn" id="profile_info">
+
       <div class="profile-info">
+
         <img src="./image/messi.jfif" alt="" class="profile-img" width="35" height="35">
-        <div>
-          <p class="name">Lionel Messi</p>
-          <p class="username">@GOAT LM10</p>
+
+        <p class="name">Lionel Messi</p>
+        <p class="username">@GOAT LM10</p>
+
+        <div class="option-icon">
+          <ion-icon name="ellipsis-horizontal"></ion-icon>
         </div>
       </div>
+
+
+
+
       <div class="option-icon">
         <ion-icon name="ellipsis-horizontal"></ion-icon>
       </div>
@@ -158,6 +166,14 @@
             </li>
       </div>
     </a>
+
+
+
+
+
+
+
+
    <!-- <div class="menu">
       <ul>
         <li class="titem">
@@ -168,8 +184,15 @@
             <a href="signup.html" class="item-link">Add account</a>
           </li>
     </div>-->
+
+
+
+
+
+
+
+
   </div>
-</nav>
 
   <div class="overlay"></div>
 
@@ -185,15 +208,19 @@
 
   <!--TWEET BOX START-->
   <nav class="tweet-box">
-<div class="feeds-content">
-  <div class="feeds-header" style="padding-top: 6.5rem">
-    <div class="header-top">
-      <h4>Home</h4>
-      <i class="far fa-star"></i>
+    <div class="feeds-content">
+      <div class="feeds-header" style="padding-top: 0.5rem">
+        <div class="header-top">
+          <h4>Home</h4>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</nav>
+  </nav>
+<hr>
+
+
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="main.js"></script>
