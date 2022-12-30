@@ -1,0 +1,16 @@
+h5 
+{
+  width: 55%; 
+  text-align: center; 
+  border-bottom: 1px solid grey; 
+  line-height: 0.1em;
+  margin-top: 1.2vh; 
+  margin-bottom: 0.4vh; 
+  font-size: 15px
+} 
+
+h5 span 
+{ 
+   background:#fff; 
+   padding:0 10px; 
+}
