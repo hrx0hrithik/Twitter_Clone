@@ -81,9 +81,18 @@ a:hover
 {
     background-color:whitesmoke;
 }
-.btn:hover,a,.btn-p{
+.box-two .btn-p:hover
+{
+ background-color: rgb(39,44,48);
+}
+.btn:hover,a,.btn-p
+{
   cursor: pointer;
 }
 p{
   text-align: center;
+}
+.acc-already
+{
+  background-color:(138,136,136);
 }
