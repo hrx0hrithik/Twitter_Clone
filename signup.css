@@ -58,14 +58,10 @@ a
   justify-content: center;
   font-family: 'Poppins', sans-serif;
   text-align:center;
-  margin: auto;
+  display: flex;
   
 }
-.box-one button img
-{
-  margin: auto;  
-  justify-content: center; 
-}
+
 .box-two .btn-p
 {
   background-color:#121212 ;
@@ -105,7 +101,19 @@ p{
   font-size: 13px;
   margin: 0;
   text-align: left;
+  padding: 11px;
+}
 
+.btn-text{
+  margin: 8px;
+}
+
+.btn-icon{
+  margin: 8px;
+}
+
+.btn-signup{
+  margin: auto;
 }
 
 @media screen and (max-width: 690px){ /*media query should be in the last*/
