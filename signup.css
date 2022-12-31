@@ -5,9 +5,9 @@ body
 
 .container
 {
-    position:absolute;
-    top: 50%;
-    left: 50%;
+    position:relative;
+    top: 50vh;
+    left: 50vw;
     transform: translate(-50%,-50%);
     background:#fff;
     width: 600px;
@@ -20,6 +20,9 @@ body
     font-family: 'Poppins', sans-serif;
 }
 
+h1{
+  margin: 5vh 2vw;
+}
 
 h5 
 {
@@ -30,7 +33,7 @@ h5
   margin-top: 0.3vh; 
   margin-bottom: 0.4vh; 
   font-size: 15px;
-  margin-bottom: 3.2vh;
+  /* margin-bottom: 3.2vh; */ /* margin-bottom 2 bar de diya h*/
   
 } 
 
@@ -94,5 +97,19 @@ p{
 }
 .acc-already
 {
-  background-color:(138,136,136);
+  color:rgb(138,136,136);
+  font-size: 0.9rem;
+}
+.signup-term{
+  color:rgb(138,136,136);
+  font-size: 13px;
+  margin: 0;
+  text-align: left;
+
+}
+
+@media screen and (max-width: 690px){ /*media query should be in the last*/
+  body{
+    background-color: #fff;
+  };
 }
