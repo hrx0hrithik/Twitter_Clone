@@ -1,8 +1,7 @@
 body
-{
- background-color:#999 ;
+{ 
+  background-color: #999;
 }
-
 .container
 {
     position:relative;
@@ -20,31 +19,27 @@ body
     font-family: 'Poppins', sans-serif;
 }
 
-h1{
-  margin: 5vh 2vw;
+.box, .box button
+{
+    display: flex;
+    align-items: center;
 }
 
-h5 
+.box-one
 {
-  width: 50%; 
-  text-align: center; 
-  border-bottom: 1px solid grey; 
-  line-height: 0.1em;
-  margin-top: 0.3vh; 
-  margin-bottom: 0.4vh; 
-  font-size: 15px;
-  /* margin-bottom: 3.2vh; */ /* margin-bottom 2 bar de diya h*/
-  
-} 
-
-h5 span 
-{ 
-   background:#fff; 
-   padding:0 10px; 
+    width: 300px;
+    height: 260px;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: space-evenly;
 }
-a
+.box-two
 {
-  text-decoration: none;
+    width: 300px;
+    height: 70px;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: space-evenly;
 }
 .box button
 {
@@ -57,20 +52,67 @@ a
   border-radius: 20px;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
-  text-align:center;
-  display: flex;
-  
 }
-
-.box-two .btn-p
+.box-one button img
 {
-  background-color:#121212 ;
-  color:#fff; 
+  margin: 0.5rem;   
+}
+.box-one i
+{
+   color: #00acee; 
+   font-size: 1.8rem;
+}
+.box-two input
+{
+    position: relative;
+    width: 300px;
+    height: 55px;
+    outline: none;
+    border: 1px solid rgb(211,210,210);
+    border-radius: 4px;
+    padding-left: 10px;
+
+}
+.box-two input label
+{
+    position:absolute;
+    top: 0;
+}
+.box-two input::placeholder
+{
+  font-size: 1rem;
+
+}
+.box-two input:focus
+{
+    border: 1px solid #00acee;
+}
+.box-two .next-btn
+{
+  background-color:#121212 ; 
+  color: #fff; 
+}
+.box-two .next-btn:hover
+{
+  background-color:rgb(39,44,48); 
    
 }
-a:hover
+.btn:hover{
+  cursor: pointer;
+}
+.container p
 {
-  text-decoration: underline;
+   font-size:0.9rem; 
+   color: rgb(138,136,136);
+}
+.container p a
+{
+  text-decoration: none;
+  color: #44b7e4;
+}
+.box-two .forget:hover
+{
+  background-color:whitesmoke;
 }
 .box-one .apple:hover
 {
@@ -80,44 +122,52 @@ a:hover
 {
     background-color:whitesmoke;
 }
-.box-two .btn-p:hover
+h2
 {
- background-color: rgb(39,44,48);
+  font-size: 28px;
 }
-.btn:hover,a,.btn-p
+h5 
 {
-  cursor: pointer;
+  width: 55%; 
+  text-align: center; 
+  border-bottom: 1px solid grey; 
+  line-height: 0.1em;
+  margin-top: 0;
+  margin-bottom: 0.4vh; 
+  font-size: 15px
+} 
+
+h5 span 
+{ 
+   background:#fff; 
+   padding:0 10px; 
 }
-p{
+
+
+/* p{
   text-align: center;
-}
-.acc-already
-{
-  color:rgb(138,136,136);
+} */
+.acc-already {
+  color: rgb(138, 136, 136);
   font-size: 0.9rem;
 }
-.signup-term{
-  color:rgb(138,136,136);
+
+.signup-term {
+  color: rgb(138, 136, 136);
   font-size: 13px;
   margin: 0;
   text-align: left;
   padding: 11px;
 }
 
-.btn-text{
-  margin: 8px;
-}
 
-.btn-icon{
-  margin: 8px;
-}
 
-.btn-signup{
-  margin: auto;
-}
+@media screen and (max-width: 690px) {
 
-@media screen and (max-width: 690px){ /*media query should be in the last*/
-  body{
+  /*media query should be in the last*/
+  body {
     background-color: #fff;
-  };
+  }
+
+  ;
 }
