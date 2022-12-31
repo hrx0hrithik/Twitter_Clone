@@ -1,12 +1,37 @@
+body
+{
+ background-color:#999 ;
+}
+
+.container
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    width: 600px;
+    height: 650px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 h5 
 {
-  width: 55%; 
+  width: 50%; 
   text-align: center; 
   border-bottom: 1px solid grey; 
   line-height: 0.1em;
-  margin-top: 1.2vh; 
+  margin-top: 0.3vh; 
   margin-bottom: 0.4vh; 
-  font-size: 15px
+  font-size: 15px;
+  margin-bottom: 3.2vh;
+  
 } 
 
 h5 span 
@@ -14,3 +39,49 @@ h5 span
    background:#fff; 
    padding:0 10px; 
 }
+a
+{
+  text-decoration: none;
+}
+.box button
+{
+  width: 300px; 
+  height: 40px;
+  background-color: #fff ; 
+  outline: none;
+  font-weight: bold;
+  border: 1px solid rgb(211,210,210);
+  border-radius: 20px;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  text-align:center;
+  margin: auto;
+  
+}
+.box-one button img
+{
+  margin: auto;  
+  justify-content: center; 
+}
+.box-two .btn-p
+{
+  background-color:#121212 ;
+  color:#fff; 
+   
+}
+a:hover
+{
+  text-decoration: underline;
+}
+.box-one .apple:hover
+{
+    background-color:whitesmoke; 
+}
+.box-one .google:hover
+{
+    background-color:whitesmoke;
+}
+.btn:hover,a,.btn-p{
+  cursor: pointer;
+}
+
