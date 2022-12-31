@@ -84,4 +84,6 @@ a:hover
 .btn:hover,a,.btn-p{
   cursor: pointer;
 }
-
+p{
+  text-align: center;
+}
