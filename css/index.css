@@ -180,6 +180,9 @@ body
   text-decoration: none;
   color: #44b7e4;
 }
+.container p a:hover{
+  text-decoration: underline;
+}
 .box-two .forget:hover
 {
   background-color:whitesmoke;
@@ -223,6 +226,10 @@ h5 span
   color: #44b7e4;
   font-size: 13px;
 }
+.pass-field a:hover{
+  text-decoration: underline;
+}
+
 
 .material-icons{
   position: absolute;
