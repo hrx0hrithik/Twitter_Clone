@@ -1,8 +1,8 @@
-.sidebar,.tweet-box{
+/*.sideba{
   width: auto;
   float: left;
- /* border: 2px solid #000;*/
-}
+ border: 2px solid #000;
+}*/
 :root {
   --background: #fff;
   --brandBackground: #1d9bf020;
@@ -337,4 +337,3 @@ img.profile-img {
 
 
 
-/*css for Tweet box*/
