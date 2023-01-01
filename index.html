@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./image/twitter.jfif" type="image/jfif">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Twitter log in page</title>
     <link rel="stylesheet" href="./css/index.css">
 
@@ -13,10 +14,11 @@
 
 <body>
     <div class="container">
+        <i class="fab fa-twitter"><a href="main.html"><img src="image/icons8-twitter-48.png" width="36"></a></i>
+        <!-- First part start here -->
         <div class="part-one">
             <div class="box box-one">
 
-                <i class="fab fa-twitter"><a href="main.html"><img src="image/icons8-twitter-48.png" width="36"></a></i>
                 <h2><b> Sign in to Twitter</b></h2>
 
                 <button class="btn google">
@@ -44,9 +46,31 @@
                 <button class="btn forget">Forgot password?</button>
             </div>
 
-            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
         </div>
+
+        <!-- Second part start here -->
+        <div class="part-two">
+            <div class="box-three">
+                <h2><b>Enter Your Password</b></h2>
+                <div style="margin-top: -80px;">
+                    <lable> Username<br>
+                        <input type="text" placeholder="Phone,email, or username" />
+                    </lable>
+                </div>
+                <form class="pass-field">
+                    <input type="password" placeholder="Password" />
+                    <span class="material-icons">visibility</span>
+                    <span class="material-icons">visibility_off</span>
+                    <a href="#">Forgot Password</a>
+                </form>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+        <!-- Like a footer -->
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
