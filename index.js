@@ -4,6 +4,7 @@ const nextBtn = document.querySelector('.next-btn');
 const disId = document.querySelector('#dis-id');
 const showPassword = document.querySelector('#show-password');
 const passwordField = document.querySelector('#password');
+const loginBtn = document.getElementById('loginBtn');
 
 
 nextBtn.addEventListener('click', function () {
@@ -30,3 +31,13 @@ function getUserValue() {
     var a = userVal.value.toLowerCase();
     disId.setAttribute("placeholder", a);
 }
+
+passwordField.addEventListener("keypress", (e)=> {
+    // console.log(e.currentTarget.value);
+     const value = e.currentTarget.value;
+     if(value === ""){
+        loginBtn.disabled = true;
+     } else{
+        loginBtn.disabled = false;
+     }
+});

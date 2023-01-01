@@ -40,7 +40,7 @@
             <div class="box box-two">
 
                 <form>
-                    <input type="text" id="userId" placeholder="Phone,email, or username" />
+                    <input autocomplete="off" type="text" id="userId" placeholder="Phone,email, or username" required />
                 </form>
                 <button class="btn next-btn" onclick="getUserValue()">Next</button>
                 <button class="btn forget">Forgot password?</button>
@@ -62,7 +62,7 @@
                     <span id="show-password" class="material-icons" onclick="toogle();">visibility</span>
                     <a href="#">Forgot Password</a>
                 </form>
-                <button class="btn login-btn" >Login</button>
+                <button type="button" disabled class="btn login-btn" id="loginBtn">Login</button>
             </div>
         </div>
         <!-- Like a footer -->
