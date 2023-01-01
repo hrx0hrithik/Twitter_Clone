@@ -243,7 +243,7 @@ img.profile-img {
   display: block;
 }
 
-/* @media screen and (max-width: 800px) { //Allways write media quries at the end
+@media screen and (max-width: 800px){
   nav.sidebar {
     width: 75px;
   }
@@ -281,11 +281,7 @@ img.profile-img {
   img.profile-img {
     margin-right: 0;
   }
-   
-}*/
-
-
-
+} 
 
 
 .menu {
@@ -338,3 +334,7 @@ img.profile-img {
 img.profile-img {
   margin-right: 0;
 }
+
+
+
+/*css for Tweet box*/
