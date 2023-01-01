@@ -40,7 +40,7 @@
             <div class="box box-two">
 
                 <form>
-                    <input type="text" placeholder="Phone,email, or username" />
+                    <input type="text" id="login_user" placeholder="Phone,email, or username" />
                 </form>
                 <button class="btn next-btn">Next</button>
                 <button class="btn forget">Forgot password?</button>
@@ -54,13 +54,12 @@
                 <h2><b>Enter Your Password</b></h2>
                 <div style="margin-top: -80px;">
                     <lable> Username<br>
-                        <input type="text" placeholder="Phone,email, or username" />
+                        <input type="text" placeholder="username/Id" disabled />
                     </lable>
                 </div>
                 <form class="pass-field">
-                    <input type="password" placeholder="Password" />
-                    <span class="material-icons">visibility</span>
-                    <span class="material-icons">visibility_off</span>
+                    <input id="password" type="password" placeholder="Password" />
+                    <span id="show-password" class="material-icons" onclick="toogle();">visibility</span>
                     <a href="#">Forgot Password</a>
                 </form>
                 <button class="btn login-btn">Login</button>
