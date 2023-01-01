@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home / Twitter</title>
   <link rel="shortcut icon" href="./image/twitter.jfif" type="image/jfif">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
@@ -150,16 +150,20 @@
       </div>
     </a>
 
-      <div class="menu">
-        <ul>
-          <li class="titem">
-            <a href="index.html" class="item-link">Log out</a>
+    <div class="menu">
+      <ul>
+        <a href="index.html" class="titem">
+          <li class="item-link">
+            Log out
           </li>
-          <ul>
-            <li class="titem">
-              <a href="signup.html" class="item-link">Add account</a>
+        </a>
+        <ul>
+          <a href="signup.html" class="titem">
+            <li class="item-link">
+              Add account
             </li>
-      </div>
+          </a>
+    </div>
   </nav>
 
   <div class="overlay"></div>
@@ -175,16 +179,258 @@
 
 
   <!--TWEET BOX START-->
-  <nav class="tweet-box">
-    <div class="feeds-content">
-      <div class="feeds-header" style="padding-top: 0.5rem">
-        <div class="header-top">
-          <h4>Home</h4>
-          <i class="far fa-star"></i>
+  <div class="center-flex-container">
+    <div class="home">
+      <h1>Home</h1>
+      <i class="fas fa-magic"></i>
+    </div>
+
+    <div class="post-tweet">
+      <form action="">
+        <div class="form-group-1">
+          <img src="image/messi.jfif" alt="profile-pics">
+          <input type="text" placeholder="What's happening?">
         </div>
+        <div class="form-group-2">
+          <div class="post-icons">
+            <i class="far fa-image"></i>
+            <i class="far fa-file-image"></i>
+            <i class="fas fa-stream"></i>
+            <i class="far fa-smile"></i>
+            <i class="far fa-calendar-check"></i>
+          </div>
+          <button class="btn" type="submit">Tweet</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="tweets">
+      <div class="user-pics"><img src="./image/user3.jfif" alt="user3"></div>
+      <div class="user-content-box">
+        <div class="user-names">
+          <hi class="full-name">Sherlock Holmes</hi>
+          <p class="user-name">@iamsherlock</p>
+          <p class="time"> . 58mins</p>
+        </div>
+        
+        <div class="user-content">
+          <p>We've gotta send kids back to school so one day they can be doctors and scientists, and everyone can ignore them.</p>
+        </div>
+
+        <div class="content-icons">
+          <i class="far fa-comment blue"> 109</i>
+          <i class="fas fa-retweet green"> 865</i>
+          <i class="far fa-heart red">1.6k</i>
+          <i class="fas fa-chevron-up blue"></i>
+        </div>
+
       </div>
     </div>
-  </nav>
+    <div class="tweets">
+      <div class="user-pics"><img src="./image/user2.jfif" alt="user2"></div>
+      <div class="user-content-box">
+        <div class="user-names">
+          <hi class="full-name">Cristiano Ronaldo</hi>
+          <p class="user-name">@CR 7</p>
+          <p class="time"> . 1hr</p>
+        </div>
+        
+        <div class="user-content">
+          <p>If the whole world was blind, how many people would you impress?
+            <a href="#">#100daysofcode</a> <a href="#">#javascript</a> <a href="#">#womenwhocode</a></p>
+        </div>
+
+        <div class="content-icons">
+          <i class="far fa-comment blue"> 2k</i>
+          <i class="fas fa-retweet green"> 6k</i>
+          <i class="far fa-heart red"> 10k</i>
+          <i class="fas fa-chevron-up blue"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="tweets">
+      <div class="user-pics"><img src="image/user1.jfif" alt="user1"></div>
+      <div class="user-content-box">
+        <div class="user-names">
+          <hi class="full-name">M.S.Dhoni</hi>
+          <p class="user-name">@captaincool</p>
+          <p class="time"> . 2hrs</p>
+        </div>
+        
+        <div class="user-content">
+          <p>Eat. Code, Sleep. repeat! <a href="#">#CodeNewbie</a> <a href="#">#100DaysOfCode</a></p>
+          <img src="./image/content1.jfif" alt="content1">
+        </div>
+
+        <div class="content-icons">
+          <i class="far fa-comment blue"> 273</i>
+          <i class="fas fa-retweet green"> 2k</i>
+          <i class="far fa-heart red"> 3k</i>
+          <i class="fas fa-chevron-up blue"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="tweets">
+      <div class="user-pics"><img src="image/user4.jfif" alt="user4"></div>
+      <div class="user-content-box">
+        <div class="user-names">
+          <hi class="full-name">Virat Kohli</hi>
+          <p class="user-name">@chasemaster</p>
+          <p class="time"> . 4hrs</p>
+        </div>
+        
+        <div class="user-content">
+          <p>There's no clear correlation between your background and what you are going to achieve in life..</p>
+        </div>
+
+        <div class="content-icons">
+          <i class="far fa-comment blue"> 4k</i>
+          <i class="fas fa-retweet green"> 8k</i>
+          <i class="far fa-heart red">13k</i>
+          <i class="fas fa-chevron-up blue"></i>
+        </div>
+
+      </div>
+    </div>
+
+
+    <section class="follow-users-box">
+
+      <div class="follow-header">
+        <h1 class="main-text">Who to follow</h1>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+
+      <div class="follow-user">
+        <div class="related-followers">
+          <p class="sub-text"><i class="fas fa-user"></i> Subhrajit and 20 others follow</p>
+        </div>
+
+        <div class="user-profile">
+          <div class="user-pics"><img src="./image/user6.jfif" alt="user6">
+          </div>
+
+          <div class="user-profile-content">
+            <div class="title-container">
+              <div class="user-names">
+                <div class="full-name"><h1 class="main-text">Larry Page #Google</h1></div>
+                <div class="user-name"><p class="sub-text">@Larry Page</p></div>
+              </div>
+
+              <div class="follow-btn"><a href="#">follow</a></div>
+
+            </div>
+            <div class="bio-container">
+              <p><a href="#">♯WordPress/Php</a> Geek Smiling face with sunglasses <a href="#">♯JavascriptDeveloper</a> Slightly smiling face <a href="#">♯ToolsCreator</a> <a href="#">♯http://webscreenshot.now.sh</a> Always ready to help with code Handshake</p>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="follow-user">
+        <div class="related-followers">
+          <p class="sub-text"><i class="fas fa-user"></i>Pallab and 200 others follow</p>
+        </div>
+
+        <div class="user-profile">
+          <div class="user-pics"><img src="./image/user7.jfif" alt="user7">
+          </div>
+
+          <div class="user-profile-content">
+            <div class="title-container">
+              <div class="user-names">
+                <div class="full-name"><h1 class="main-text">pichai sundararajan #Indian</h1></div>
+                <div class="user-name"><p class="sub-text">@pichai_sundararajan</p></div>
+              </div>
+
+              <div class="follow-btn"><a href="#">follow</a></div>
+
+            </div>
+            <div class="bio-container">
+             <a href="#">♯JavascriptDeveloper</a> Avocado | Fire Speaker | Fire Teacher | Ceo of Google - <a href="#">http://bit.ly/jqqyt</a> |<a href="#"> @twilio</a> Champion | Motto: <a href="#">#LearnBuildTeach</a></p>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="follow-user">
+        <div class="related-followers">
+          <p class="sub-text"><i class="fas fa-user"></i> Hriktik and 50 others follow</p>
+        </div>
+
+        <div class="user-profile">
+          <div class="user-pics"><img src="./image/user8.jfif" alt="user8">
+          </div>
+
+          <div class="user-profile-content">
+            <div class="title-container">
+              <div class="user-names">
+                <div class="full-name"><h1 class="main-text">Shahrukh Khan</h1></div>
+                <div class="user-name"><p class="sub-text">@iamsrk</p></div>
+              </div>
+
+              <div class="follow-btn"><a href="#">follow</a></div>
+
+            </div>
+            <div class="bio-container">
+              <p>software engineer at 
+                <a href="#">@Bollywood</a>
+                . career switcher. vue + rails. tweeting about tech, books, startups, and big ideas. writing @ <a href="#">http://iamsrk.dev.</a></p>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="follow-footer">
+        <a href="#">Show more</a>
+      </div>
+
+    </section>
+
+    <div class="tweets">
+      <div class="user-pics"><img src="./image/user5.jfif" alt="user5"></div>
+      <div class="user-content-box">
+        <div class="user-names">
+          <hi class="full-name">Amitabh Bachchan</hi>
+          <p class="user-name">@amitabh_bachchan</p>
+          <p class="time"> . 6hrs</p>
+        </div>
+        
+        <div class="user-content">
+          <p>Time to settle down and play my favourite game IN THE WORLD Earth globe europe-africa</p>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis sunt ratione!</p>
+            <img src="./image/content2.jfif" alt="content5">
+        </div>
+
+        <div class="content-icons">
+          <i class="far fa-comment blue"> 78</i>
+          <i class="fas fa-retweet green"> 265</i>
+          <i class="far fa-heart red"> 934</i>
+          <i class="fas fa-chevron-up blue"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="pagnation">
+      <a href="#">Load more</a>
+    </div>
+
+</div>
 
 
 
