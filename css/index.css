@@ -87,7 +87,7 @@ body
    color: #00acee; 
    font-size: 1.8rem;
 }
-.box-two input, .box-three input
+.box-two input
 {
     position: relative;
     width: 300px;
@@ -161,11 +161,6 @@ body
 {
     border: 1px solid #00acee;
 }
-.box-three .login-btn
-{
-  background-color:#121212 ; 
-  color: #fff; 
-}
 .box-three .login-btn:hover
 {
   background-color:rgb(39,44,48); 
@@ -226,8 +221,14 @@ h5 span
 {
   text-decoration: none;
   color: #44b7e4;
+  font-size: 13px;
 }
 
+.material-icons{
+  position: absolute;
+  top: 38.5%;
+  right: 18%;
+}
 
 @media screen and (max-width: 690px){
   body{
