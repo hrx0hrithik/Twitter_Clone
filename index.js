@@ -17,19 +17,19 @@ var clicked = false;
 function toogle() {
     if (!clicked) {
         clicked = true;
-        showPassword.innerHTML = 'visibility_off';
-        passwordField.setAttribute("type", "text");
+        showPassword.innerText = 'visibility_off';
+        passwordField.type = "text";
     } else {
         clicked = false;
-        showPassword.innerHTML = 'visibility';
-        passwordField.setAttribute("type", "password");
+        showPassword.innerText = 'visibility';
+        passwordField.type = "password";
     }
 }
 
 function getUserValue() {
     var userVal = document.getElementById("userId");
     var a = userVal.value.toLowerCase();
-    disId.setAttribute("placeholder", a);
+    disId.placeholder = a;
 }
 
 passwordField.addEventListener("keypress", (e) => {
