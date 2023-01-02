@@ -136,6 +136,7 @@ body
   font-family: 'Poppins', sans-serif;
   position: relative;
   top: 45px;
+  cursor: pointer;
 }
 .login-btn-dis{
   width: 400px; 
