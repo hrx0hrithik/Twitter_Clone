@@ -1,21 +1,24 @@
-body {
+body 
+{
   background-color: #999;
 }
 
-.container {
-  position: relative;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  width: 600px;
-  height: 650px;
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
+.container
+{
+    position:relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    width: 600px;
+    height: 650px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Cabin', sans-serif;
+
 }
 
 .fa-twitter {
