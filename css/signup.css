@@ -1,23 +1,21 @@
-body 
-{
+body {
   background-color: #999;
 }
 
-.container
-{
-    position:relative;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%,-50%);
-    background:#fff;
-    width: 600px;
-    height: 650px;
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    font-family: 'Cabin', sans-serif;
+.container {
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 600px;
+  height: 650px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cabin', sans-serif;
 
 }
 
@@ -30,6 +28,7 @@ body
 .box button {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .box-one {
@@ -173,57 +172,45 @@ h5 span {
 
 /*Second part of the code--Create account section*/
 
-.container-2 
-{
+
+.part-two {
+  width: 400px;
+  height: 0px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  width: 600px;
-  height: 550px;
-  border-radius: 20px;
+  top: 50px;
+}
+
+.box-three {
+  width: 418px;
+  height: 120px;
+}
+
+.box-four {
+  width: 400px;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
+
 }
 
-.box-2 
-{
-  width: 400px;
-  height: 150px;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.crt-acc 
-{
-  padding-bottom: 40px;
-  padding-top: 0;
-}
-
-.box-2 button 
-{
+.box-four button {
   width: 400px;
   height: 40px;
-  background-color: #fff;
+  background-color: #121212;
+  color: #fff;
   outline: none;
   font-weight: bold;
-  border: 1px solid rgb(211, 210, 210);
   border-radius: 20px;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif;
-
 }
 
-.part-one input 
-{
+.box-four button:hover {
+  background-color: rgb(39, 44, 48);
+}
+
+.box-three input {
   position: relative;
   width: 400px;
-  height: 45px;
+  height: 55px;
   outline: none;
   border: 1px solid rgb(211, 210, 210);
   justify-content: center;
@@ -232,66 +219,64 @@ h5 span {
 
 }
 
-.brief-cls 
-{
-  padding-top: 10px;
+.brief-cls {
   padding-bottom: 10px;
   font-size: 14px;
+  color: #7d8993
 }
 
-select 
-{
-  padding-bottom: 15px;
+select {
+  padding-bottom: 28px;
 }
 
-.part-two .mdy-cls 
-{
-  padding-bottom: 20px;
+.part-two .mdy-cls {
+  padding-bottom: 110px;
 }
 
-.part-one .name 
-{
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.part-one .phone 
-{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.part-two .month 
-{
+.part-two .month {
   width: 200px;
-  height: 45px;
+  height: 55px;
 }
 
-.part-two .days
-{
+.part-two .days {
   width: 90px;
-  height: 45px;
+  height: 55px;
 }
 
-.part-two .years 
-{
+.part-two .years {
   width: 100px;
-  height: 45px;
+  height: 55px;
 }
 
-.dob-cls 
-{
-  padding-top: 30px;
-}
-
-.part-two .nxt-btn 
-{
+.part-two.nxt-btn {
   background-color: #121212;
   color: #fff;
 }
-.part-two .next-button
-{
-  padding-top: 20px;
+
+.dob-cls {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.box-three a {
+  text-decoration: none;
+  color: #44b7e4;
+  font-size: 15px;
+  display: flex;
+  align-self: flex-end;
+  padding: 3px;
+}
+
+.box-three a:hover {
+  text-decoration: underline;
+}
+
+.step {
+  font-weight: 200;
+  font-size: 14px;
+  position: absolute;
+  top: -31px;
+  left: -8px;
 }
 
 @media screen and (max-width: 690px) {
