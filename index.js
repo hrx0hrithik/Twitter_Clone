@@ -32,7 +32,7 @@ function getUserValue() {
     disId.setAttribute("placeholder", a);
 }
 
-passwordField.addEventListener("keypress", (e)=> {
+passwordField.addEventListener("keypress", (e) => {
     // console.log(e.currentTarget.value);
      const value = e.currentTarget.value;
      if(value === ""){
