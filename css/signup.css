@@ -1,152 +1,150 @@
-body
-{ 
+body {
   background-color: #999;
 }
-.container
-{
-    position:relative;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%,-50%);
-    background:#fff;
-    width: 600px;
-    height: 650px;
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    font-family: 'Poppins', sans-serif;
+
+.container {
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 600px;
+  height: 650px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
-.fa-twitter{
+
+.fa-twitter {
   position: absolute;
   top: 10px;
 }
 
-.box, .box button
-{
-    display: flex;
-    align-items: center;
+.box,
+.box button {
+  display: flex;
+  align-items: center;
 }
 
-.box-one
-{
-    width: 300px;
-    height: 160px;
-    align-items: center;
-    flex-direction:column ;
-    justify-content: space-evenly;
-    margin-top: -50px;
+.box-one {
+  width: 300px;
+  height: 160px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: -50px;
 }
-.box-two
-{
-    width: 300px;
-    height: 150px;
-    align-items: center;
-    flex-direction:column ;
-    justify-content: space-evenly;
+
+.box-two {
+  width: 300px;
+  height: 150px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.box button
-{
-  width: 300px; 
+
+.box button {
+  width: 300px;
   height: 40px;
-  background-color: #fff ; 
+  background-color: #fff;
   outline: none;
   font-weight: bold;
-  border: 1px solid rgb(211,210,210);
+  border: 1px solid rgb(211, 210, 210);
   border-radius: 20px;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
 }
-.box-one button img
-{
-  margin: 0.5rem;   
+
+.box-one button img {
+  margin: 0.5rem;
 }
-.box-one i
-{
-   color: #00acee; 
-   font-size: 1.8rem;
+
+.box-one i {
+  color: #00acee;
+  font-size: 1.8rem;
 }
-.box-two input
-{
-    position: relative;
-    width: 300px;
-    height: 55px;
-    outline: none;
-    border: 1px solid rgb(211,210,210);
-    border-radius: 4px;
-    padding-left: 10px;
+
+.box-two input {
+  position: relative;
+  width: 300px;
+  height: 55px;
+  outline: none;
+  border: 1px solid rgb(211, 210, 210);
+  border-radius: 4px;
+  padding-left: 10px;
 
 }
-.box-two input label
-{
-    position:absolute;
-    top: 0;
+
+.box-two input label {
+  position: absolute;
+  top: 0;
 }
-.box-two input::placeholder
-{
+
+.box-two input::placeholder {
   font-size: 1rem;
 
 }
-.box-two input:focus
-{
-    border: 1px solid #00acee;
+
+.box-two input:focus {
+  border: 1px solid #00acee;
 }
-.box-two .next-btn
-{
-  background-color:#121212 ; 
-  color: #fff; 
+
+.box-two .next-btn {
+  background-color: #121212;
+  color: #fff;
 }
-.box-two .next-btn:hover
-{
-  background-color:rgb(39,44,48); 
-   
+
+.box-two .next-btn:hover {
+  background-color: rgb(39, 44, 48);
+
 }
-.btn:hover{
+
+.btn:hover {
   cursor: pointer;
 }
 
-.container p a
-{
+.container p a {
   text-decoration: none;
   color: #44b7e4;
 }
-.container p a:hover
-{
-  text-decoration: underline ;
-  
+
+.container p a:hover {
+  text-decoration: underline;
+
 }
-.box-two .forget:hover
-{
-  background-color:whitesmoke;
+
+.box-two .forget:hover {
+  background-color: whitesmoke;
 }
-.box-one .apple:hover
-{
-    background-color:whitesmoke; 
+
+.box-one .apple:hover {
+  background-color: whitesmoke;
 }
-.box-one .google:hover
-{
-    background-color:whitesmoke;
+
+.box-one .google:hover {
+  background-color: whitesmoke;
 }
-h2
-{
+
+h2 {
   font-size: 28px;
 }
-h5 
-{
-  width: 18rem; 
-  text-align: center; 
-  border-bottom: 1px solid grey; 
+
+h5 {
+  width: 18rem;
+  text-align: center;
+  border-bottom: 1px solid grey;
   line-height: 0.1em;
   margin-top: 1.2vh;
-  margin-bottom: 0.4vh; 
+  margin-bottom: 0.4vh;
   font-size: 15px
-} 
+}
 
-h5 span 
-{ 
-   background:#fff; 
-   padding:0 10px; 
+h5 span {
+  background: #fff;
+  padding: 0 10px;
 }
 
 
@@ -166,8 +164,131 @@ h5 span
   padding: 0;
 }
 
-.part-one{
+.part-one-cls {
   display: none;
+}
+
+/*Second part of the code--Create account section*/
+
+.container-2 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 600px;
+  height: 550px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.box-2 
+{
+  width: 400px;
+  height: 150px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.crt-acc 
+{
+  padding-bottom: 40px;
+  padding-top: 0;
+}
+
+.box-2 button 
+{
+  width: 400px;
+  height: 40px;
+  background-color: #fff;
+  outline: none;
+  font-weight: bold;
+  border: 1px solid rgb(211, 210, 210);
+  border-radius: 20px;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.part-one input 
+{
+  position: relative;
+  width: 400px;
+  height: 45px;
+  outline: none;
+  border: 1px solid rgb(211, 210, 210);
+  justify-content: center;
+  border-radius: 4px;
+  padding-left: 10px;
+
+}
+
+.brief-cls 
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+select 
+{
+  padding-bottom: 15px;
+}
+
+.part-two .mdy-cls 
+{
+  padding-bottom: 20px;
+}
+
+.part-one .name 
+{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.part-one .phone 
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.part-two .month 
+{
+  width: 200px;
+  height: 45px;
+}
+
+.part-two .days
+{
+  width: 90px;
+  height: 45px;
+}
+
+.part-two .years 
+{
+  width: 100px;
+  height: 45px;
+}
+
+.dob-cls 
+{
+  padding-top: 30px;
+}
+
+.part-two .nxt-btn 
+{
+  background-color: #121212;
+  color: #fff;
+}
+.part-two .next-button
+{
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 690px) {
