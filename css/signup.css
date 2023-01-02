@@ -16,7 +16,7 @@ body
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Cabin', sans-serif;
 }
 .fa-twitter{
   position: absolute;
