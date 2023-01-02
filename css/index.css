@@ -137,6 +137,20 @@ body
   position: relative;
   top: 45px;
 }
+.login-btn-dis{
+  width: 400px; 
+  height: 40px;
+  background-color:#999; 
+  color: #fff;  
+  outline: none;
+  font-weight: bold;
+  border: 1px solid rgb(211,210,210);
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  top: 45px;
+}
+
 
 .box-three input{
   position: relative;
@@ -163,11 +177,7 @@ body
 {
     border: 1px solid #00acee;
 }
-.box-three .login-btn:hover
-{
-  background-color:rgb(39,44,48); 
-   
-}
+
 .btn:hover{
   cursor: pointer;
 }
@@ -227,11 +237,19 @@ h5 span
   text-decoration: none;
   color: #44b7e4;
   font-size: 12px;
+  display: flex;
+  align-self: baseline;
+  padding-top: 4px;
 }
 .pass-field a:hover{
   text-decoration: underline;
 }
 
+form{
+  display: flex;
+  align-items: center;
+  flex-direction: column
+}
 
 .material-icons{
   position: absolute;

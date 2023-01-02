@@ -33,11 +33,14 @@ function getUserValue() {
 }
 
 passwordField.addEventListener("keypress", (e) => {
-    // console.log(e.currentTarget.value);
+    console.log(e.currentTarget.value);
      const value = e.currentTarget.value;
-     if(value === ""){
-        loginBtn.disabled = true;
-     } else{
+     if(value === "" || value === " "){
+         loginBtn.disabled = true;
+         loginBtn.classList.replace("login-btn","login-btn-dis");
+
+        } else{
+        loginBtn.classList.replace("login-btn-dis","login-btn");
         loginBtn.disabled = false;
      }
 });
