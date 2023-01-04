@@ -1,442 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home / Twitter</title>
-  <link rel="shortcut icon" href="./image/twitter.jfif" type="image/jfif">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / Twitter</title>
+    <link rel="shortcut icon" href="./image/twitter.jfif" type="image/jfif">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  </head>
 <body>
 
-
-  <nav class="sidebar">
-    <ul class="navbar">
-      <li class="navbar-brand">
-        <a href="#">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="item-icon home">
-          <ion-icon name="home-outline"></ion-icon>
-        </a>
-        <a href="#" class="item-link">Home</a>
-      </li>
-      <li class="nav-item hash">
-        <a href="#" class="item-icon hash">
-          #
-        </a>
-        <a href="#" class="item-link">Explore</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="item-icon">
-          <ion-icon name="notifications-outline"></ion-icon>
-        </a>
-        <a href="#" class="item-link">Notification</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="item-icon">
-          <ion-icon name="mail-outline"></ion-icon>
-        </a>
-        <a href="#" class="item-link">Messages</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="item-icon">
-          <ion-icon name="bookmark-outline"></ion-icon>
-        </a>
-        <a href="#" class="item-link">Bookmarks</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="item-icon">
-          <ion-icon name="reader-outline"></ion-icon>
-        </a>
-        <a href="#" class="item-link">Lists</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="item-icon">
-          <ion-icon name="person-outline"></ion-icon>
-        </a>
-        <a href="#" class="item-link">Profile</a>
-      </li>
-      <li class="nav-item" id="moreBtn">
-        <a href="#" class="item-icon">
-          <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
-        </a>
-        <a href="#" class="item-link">More</a>
-      </li>
-      <a href="#" class="tweet-btn"><ion-icon name="pencil"></ion-icon>
-        <div class="text">Tweet</div>
-      </a>
-      <div class="sub-items-box">
+  <div class="main-flex-container">
+    <div class="left-flex-container flex-item">
+      <div class="nav-links">
         <ul>
-          <li class="sub-item">
-            <a href="#" class="item-icon">
-              <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-            </a>
-            <a href="#" class="item-link">Topic</a>
-          </li>
-          <li class="sub-item">
-            <a href="#" class="item-icon">
-              <ion-icon name="flash-outline"></ion-icon>
-            </a>
-            <a href="#" class="item-link">Moments</a>
-          </li>
-          <li class="sub-item">
-            <a href="#" class="item-icon">
-              <ion-icon name="newspaper-outline"></ion-icon>
-            </a>
-            <a href="#" class="item-link">Newsletters</a>
-          </li>
-          <li class="sub-item">
-            <a href="#" class="item-icon">
-              <ion-icon name="megaphone-outline"></ion-icon>
-            </a>
-            <a href="#" class="item-link">Twitter Ads</a>
-          </li>
-          <li class="sub-item">
-            <a href="#" class="item-icon">
-              <ion-icon name="stats-chart-outline"></ion-icon>
-            </a>
-            <a href="#" class="item-link">Analytics</a>
-          </li>
-          <li class="sub-item">
-            <a href="#" class="item-icon">
-              <ion-icon name="film-outline"></ion-icon>
-            </a>
-            <a href="#" class="item-link">Media Studio</a>
-          </li>
-        </ul>
-        <ul class="config">
-          <li class="sub-item">
-            <a href="#" class="item-icon">
-              <ion-icon name="settings-outline"></ion-icon>
-            </a>
-            <a href="#" class="item-link">Settings and privacy</a>
-          </li>
-          <li class="sub-item">
-            <a href="#" class="item-icon">
-              <ion-icon name="help-circle-outline"></ion-icon>
-            </a>
-            <a href="#" class="item-link">Help Center</a>
-          </li>
-          <li class="sub-item">
-            <a href="#" class="item-icon">
-              <ion-icon name="color-palette-outline"></ion-icon>
-            </a>
-            <a href="#" class="item-link">Display</a>
-          </li>
+          <li class="nav-items logo"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="nav-items current-page"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-items"><a href="#"><i class="fas fa-hashtag"></i> Explore</a></li>
+          <li class="nav-items"><a href="#"><i class="far fa-bell"></i> Notifications</a></li>
+          <li class="nav-items"><a href="#"><i class="far fa-envelope"></i> Messages</a></li>
+          <li class="nav-items"><a href="#"><i class="far fa-bookmark"></i> Bookmarks</a></li>
+          <li class="nav-items"><a href="#"><i class="far fa-list-alt"></i> Lists</a></li>
+          <li class="nav-items"><a href="#"><i class="far fa-user"></i> Profile</a></li>
+          <li class="nav-items"><a href="#"><i class="fas fa-ellipsis-h more-icon"></i> More</a></li>
         </ul>
       </div>
-    </ul>
-
-    <a href="#" class="profile-btn" id="profile_info">
-
-      <div class="profile-info">
-
-        <img src="./image/messi.jfif" alt="" class="profile-img" width="35" height="35">
-
-        <p class="name">Lionel Messi</p>
-        <p class="username">@GOAT LM10</p>
-
-        <div class="option-icon">
-          <ion-icon name="ellipsis-horizontal"></ion-icon>
+      <div class="tweet"><a href="#">Tweet</a></div>
+      <div class="profile-box">
+        <img src="./image/messi.jfif" alt="profile">
+        <div class="profile-link">
+          <p class="full-name">Lionel Messi</p>
+          <p class="user-name">@LM10</p>
         </div>
+        <div class="options-icon"><i class="fas fa-caret-down"></i></div>
       </div>
-    </a>
+    </div>
 
-    <div class="menu">
-      <ul>
-        <a href="index.html" class="titem">
-          <li class="item-link">
-            Log out
-          </li>
-        </a>
+    <div class="center-flex-container flex-item">
+      <div class="home">
+        <h1>Home</h1>
+        <i class="fas fa-magic"></i>
+      </div>
+
+      <div class="post-tweet">
+        <form action="">
+          <div class="form-group-1">
+            <img src="./image/messi.jfif" alt="profile-pics">
+            <input type="text" placeholder="What's happening?">
+          </div>
+          <div class="form-group-2">
+            <div class="post-icons">
+              <i class="far fa-image"></i>
+              <i class="far fa-file-image"></i>
+              <i class="fas fa-stream"></i>
+              <i class="far fa-smile"></i>
+              <i class="far fa-calendar-check"></i>
+            </div>
+            <button class="btn" type="submit">Tweet</button>
+          </div>
+        </form>
+
+      </div>
+      <!-- User Content -->
+        <div class="tweets">
+          <div class="user-pics"><img src="./image/user3.jfif" alt="user3"></div>
+          <div class="user-content-box">
+            <div class="user-names">
+              <hi class="full-name">Sherlock Holmes</hi>
+              <p class="user-name">@iamSherlock</p>
+              <p class="time"> . 58mins</p>
+            </div>
+            
+            <div class="user-content">
+              <p>We've gotta send kids back to school so one day they can be doctors and scientists, and everyone can ignore them.</p>
+            </div>
+
+            <div class="content-icons">
+              <i class="far fa-comment blue"> 109</i>
+              <i class="fas fa-retweet green"> 865</i>
+              <i class="far fa-heart red">1.6k</i>
+              <i class="fas fa-chevron-up blue"></i>
+            </div>
+  
+          </div>
+        </div>
+        <div class="tweets">
+          <div class="user-pics"><img src="./image/user2.jfif" alt="user2"></div>
+          <div class="user-content-box">
+            <div class="user-names">
+              <hi class="full-name">Cristiano Ronaldo</hi>
+              <p class="user-name">@CR7</p>
+              <p class="time"> . 1hr</p>
+            </div>
+            
+            <div class="user-content">
+              <p>If the whole world was blind, how many people would you impress?
+                <a href="#">#100daysofcode</a> <a href="#">#javascript</a></p>
+            </div>
+
+            <div class="content-icons">
+              <i class="far fa-comment blue"> 2k</i>
+              <i class="fas fa-retweet green"> 6k</i>
+              <i class="far fa-heart red"> 10k</i>
+              <i class="fas fa-chevron-up blue"></i>
+            </div>
+  
+          </div>
+        </div>
+
+        <div class="tweets">
+          <div class="user-pics"><img src="./image/user4.jfif" alt="user4"></div>
+          <div class="user-content-box">
+            <div class="user-names">
+              <hi class="full-name">Virat Kohli</hi>
+              <p class="user-name">@chasemaster</p>
+              <p class="time"> . 4hrs</p>
+            </div>
+            
+            <div class="user-content">
+              <p>There's no clear correlation between your background and what you are going to achieve in life..</p>
+            </div>
+
+            <div class="content-icons">
+              <i class="far fa-comment blue"> 4k</i>
+              <i class="fas fa-retweet green"> 8k</i>
+              <i class="far fa-heart red">13k</i>
+              <i class="fas fa-chevron-up blue"></i>
+            </div>
+  
+          </div>
+        </div>
+
+        <section class="follow-users-box">
+
+          <div class="follow-header">
+            <h1 class="main-text">Who to follow</h1>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+
+          <div class="follow-user">
+            <div class="related-followers">
+              <p class="sub-text"><i class="fas fa-user"></i> Subhrajit and 20 others follow</p>
+            </div>
+
+            <div class="user-profile">
+              <div class="user-pics"><img src="./image/user6.jfif" alt="user6">
+              </div>
+
+              <div class="user-profile-content">
+                <div class="title-container">
+                  <div class="user-names">
+                    <div class="full-name"><h1 class="main-text">Larry Page #GOOGLE</h1></div>
+                    <div class="user-name"><p class="sub-text">@Larry</p></div>
+                  </div>
+
+                  <div class="follow-btn"><a href="#">follow</a></div>
+
+                </div>
+                <div class="bio-container">
+                  <p><a href="#">♯WordPress/Php</a> Geek Smiling face with sunglasses <a href="#">♯JavascriptDeveloper</a> Slightly smiling face <a href="#">♯ToolsCreator</a>Always ready to help with code Handshake</p>
+                </div>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="follow-user">
+            <div class="related-followers">
+              <p class="sub-text"><i class="fas fa-user"></i> Pallab and 200 others follow</p>
+            </div>
+
+            <div class="user-profile">
+              <div class="user-pics"><img src="./image/user7.jfif" alt="user7">
+              </div>
+
+              <div class="user-profile-content">
+                <div class="title-container">
+                  <div class="user-names">
+                    <div class="full-name"><h1 class="main-text">Sundar Pichai #INDIAN</h1></div>
+                    <div class="user-name"><p class="sub-text">@Sundar_Pichai</p></div>
+                  </div>
+
+                  <div class="follow-btn"><a href="#">follow</a></div>
+
+                </div>
+                <div class="bio-container">
+                 <a href="#">♯JavascriptDeveloper</a> Avocado | Fire Speaker | Fire Teacher |<a href="#"> @Google</a> Champion | Motto: <a href="#">#LearnBuildTeach</a></p>
+                </div>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="follow-user">
+            <div class="related-followers">
+              <p class="sub-text"><i class="fas fa-user"></i> Hriktik and 50 others follow</p>
+            </div>
+
+            <div class="user-profile">
+              <div class="user-pics"><img src="./image/user8.jfif" alt="user8">
+              </div>
+
+              <div class="user-profile-content">
+                <div class="title-container">
+                  <div class="user-names">
+                    <div class="full-name"><h1 class="main-text">SRK</h1></div>
+                    <div class="user-name"><p class="sub-text">@IamSRK</p></div>
+                  </div>
+
+                  <div class="follow-btn"><a href="#">follow</a></div>
+
+                </div>
+                <div class="bio-container">
+                  <p>software engineer at 
+                    <a href="#">@Microsoft</a>
+                    . career switcher. vue + rails. tweeting about tech, books, startups, and big ideas. writing @ <a href="#">http://jamestucker.dev.</a></p>
+                </div>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="follow-footer">
+            <a href="#">Show more</a>
+          </div>
+
+        </section>
+
+        <div class="tweets">
+          <div class="user-pics"><img src="./image/user5.jfif" alt="user5"></div>
+          <div class="user-content-box">
+            <div class="user-names">
+              <hi class="full-name">Amitabh Bacchan</hi>
+              <p class="user-name">@bigB</p>
+              <p class="time"> . 6hrs</p>
+            </div>
+            
+            <div class="user-content">
+              <p>Time to settle down and play my favourite game IN THE WORLD Earth globe europe-africa</p>
+
+              <p>  Haven’t played for about a month, too busy coding. 
+                So tired this evening though. 
+                Poker tournament with husband later..</p>
+                <img src="./img/content5.jpg" alt="content5">
+            </div>
+
+            <div class="content-icons">
+              <i class="far fa-comment blue"> 78</i>
+              <i class="fas fa-retweet green"> 265</i>
+              <i class="far fa-heart red"> 934</i>
+              <i class="fas fa-chevron-up blue"></i>
+            </div>
+  
+          </div>
+        </div>
+
+        <div class="pagnation">
+          <a href="#">Load more</a>
+        </div>
+
+    </div>
+
+    
+
+    <div class="right-flex-container flex-item">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search Twitter">
+      </div>
+
+      <div class="trends">
         <ul>
-          <a href="signup.html" class="titem">
-            <li class="item-link">
-              Add account
-            </li>
-          </a>
-    </div>
-  </nav>
-
-  <div class="overlay"></div>
-
-
-
-
-
-
-
-
-
-
-
-  <!--TWEET BOX START-->
-  <div class="center-flex-container">
-    <div class="home">
-      <h1>Home</h1>
-      <i class="fas fa-magic"></i>
-    </div>
-
-    <div class="post-tweet">
-      <form action="">
-        <div class="form-group-1">
-          <img src="image/messi.jfif" alt="profile-pics">
-          <input type="text" placeholder="What's happening?">
-        </div>
-        <div class="form-group-2">
-          <div class="post-icons">
-            <i class="far fa-image"></i>
-            <i class="far fa-file-image"></i>
-            <i class="fas fa-stream"></i>
-            <i class="far fa-smile"></i>
-            <i class="far fa-calendar-check"></i>
-          </div>
-          <button class="btn" type="submit">Tweet</button>
-        </div>
-      </form>
-    </div>
-
-    <div class="tweets">
-      <div class="user-pics"><img src="./image/user3.jfif" alt="user3"></div>
-      <div class="user-content-box">
-        <div class="user-names">
-          <hi class="full-name">Sherlock Holmes</hi>
-          <p class="user-name">@iamsherlock</p>
-          <p class="time"> . 58mins</p>
-        </div>
-        
-        <div class="user-content">
-          <p>We've gotta send kids back to school so one day they can be doctors and scientists, and everyone can ignore them.</p>
-        </div>
-
-        <div class="content-icons">
-          <i class="far fa-comment blue"> 109</i>
-          <i class="fas fa-retweet green"> 865</i>
-          <i class="far fa-heart red">1.6k</i>
-          <i class="fas fa-chevron-up blue"></i>
-        </div>
-
-      </div>
-    </div>
-    <div class="tweets">
-      <div class="user-pics"><img src="./image/user2.jfif" alt="user2"></div>
-      <div class="user-content-box">
-        <div class="user-names">
-          <hi class="full-name">Cristiano Ronaldo</hi>
-          <p class="user-name">@CR 7</p>
-          <p class="time"> . 1hr</p>
-        </div>
-        
-        <div class="user-content">
-          <p>If the whole world was blind, how many people would you impress?
-            <a href="#">#100daysofcode</a> <a href="#">#javascript</a> <a href="#">#womenwhocode</a></p>
-        </div>
-
-        <div class="content-icons">
-          <i class="far fa-comment blue"> 2k</i>
-          <i class="fas fa-retweet green"> 6k</i>
-          <i class="far fa-heart red"> 10k</i>
-          <i class="fas fa-chevron-up blue"></i>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="tweets">
-      <div class="user-pics"><img src="image/user1.jfif" alt="user1"></div>
-      <div class="user-content-box">
-        <div class="user-names">
-          <hi class="full-name">M.S.Dhoni</hi>
-          <p class="user-name">@captaincool</p>
-          <p class="time"> . 2hrs</p>
-        </div>
-        
-        <div class="user-content">
-          <p>Eat. Code, Sleep. repeat! <a href="#">#CodeNewbie</a> <a href="#">#100DaysOfCode</a></p>
-          <img src="./image/content1.jfif" alt="content1">
-        </div>
-
-        <div class="content-icons">
-          <i class="far fa-comment blue"> 273</i>
-          <i class="fas fa-retweet green"> 2k</i>
-          <i class="far fa-heart red"> 3k</i>
-          <i class="fas fa-chevron-up blue"></i>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="tweets">
-      <div class="user-pics"><img src="image/user4.jfif" alt="user4"></div>
-      <div class="user-content-box">
-        <div class="user-names">
-          <hi class="full-name">Virat Kohli</hi>
-          <p class="user-name">@chasemaster</p>
-          <p class="time"> . 4hrs</p>
-        </div>
-        
-        <div class="user-content">
-          <p>There's no clear correlation between your background and what you are going to achieve in life..</p>
-        </div>
-
-        <div class="content-icons">
-          <i class="far fa-comment blue"> 4k</i>
-          <i class="fas fa-retweet green"> 8k</i>
-          <i class="far fa-heart red">13k</i>
-          <i class="fas fa-chevron-up blue"></i>
-        </div>
-
-      </div>
-    </div>
-
-
-    <section class="follow-users-box">
-
-      <div class="follow-header">
-        <h1 class="main-text">Who to follow</h1>
-        <i class="fas fa-chevron-down"></i>
-      </div>
-
-      <div class="follow-user">
-        <div class="related-followers">
-          <p class="sub-text"><i class="fas fa-user"></i> Subhrajit and 20 others follow</p>
-        </div>
-
-        <div class="user-profile">
-          <div class="user-pics"><img src="./image/user6.jfif" alt="user6">
-          </div>
-
-          <div class="user-profile-content">
-            <div class="title-container">
-              <div class="user-names">
-                <div class="full-name"><h1 class="main-text">Larry Page #Google</h1></div>
-                <div class="user-name"><p class="sub-text">@Larry Page</p></div>
-              </div>
-
-              <div class="follow-btn"><a href="#">follow</a></div>
-
+          <li class="nav-list header">
+            <h2>Trends for you</h2>
+            <i class="fas fa-cog">
+          </i>
+          <li class="nav-list">
+            <div class="trend-list">
+              <p class="sub-text">Trending in FOOTBALL</p>
+              <p class="main-text">#AL-NASSER's</p>
+              <p class="sub-text">274K Tweets</p>
             </div>
-            <div class="bio-container">
-              <p><a href="#">♯WordPress/Php</a> Geek Smiling face with sunglasses <a href="#">♯JavascriptDeveloper</a> Slightly smiling face <a href="#">♯ToolsCreator</a> <a href="#">♯http://webscreenshot.now.sh</a> Always ready to help with code Handshake</p>
+            <div class="trend-icon">
+              <i class="fas fa-chevron-down"></i>
             </div>
-            
-          </div>
+          </li>
+          <li class="nav-list">
+            <div class="trend-list">
+              <p class="sub-text">Trending in Cricket</p>
+              <p class="main-text">#IPL 2023</p>
+              <p class="sub-text">154K Tweets</p>
+            </div>
+            <div class="trend-icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </li>
+          <li class="nav-list">
+            <div class="trend-list">
+              <p class="sub-text">Trending in Cricket</p>
+              <p class="main-text">#definitely not</p>
+              <p class="sub-text">135K Tweets</p>
+            </div>
+            <div class="trend-icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </li>
+          <li class="nav-list">
+            <div class="trend-list">
+              <p class="sub-text">Trending in Technology</p>
+              <p class="main-text">#WEB3</p>
+              <p class="sub-text">124K Tweets</p>
+            </div>
+            <div class="trend-icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </li>
+          <li class="nav-list">
+            <div class="trend-list">
+              <p class="sub-text">Trending in Politics</p>
+              <p class="main-text">#G-20</p>
+              <p class="sub-text">43K Tweets</p>
+            </div>
+            <div class="trend-icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </li>
+          
+          
+          <li class="nav-list"><a href="#">Show more</a></li>
+        </ul>
+      </div>
 
+      <div class="right-footer">
+        <div class="footer-links">
+          <a href="#" class="sub-text">Terms</a>
+          <a href="#" class="sub-text">Privacy policy</a>
+          <a href="#" class="sub-text">Ads info</a>
+          <a href="#" class="sub-text">more</a>
+          <i class="fas fa-chevron-down sub-text"></i>
+        </div>
+        <div class="footer-copyright">
+          <p class="sub-text">&copy; 2023 Twitter, Inc.</p>
         </div>
 
       </div>
-
-      <div class="follow-user">
-        <div class="related-followers">
-          <p class="sub-text"><i class="fas fa-user"></i>Pallab and 200 others follow</p>
-        </div>
-
-        <div class="user-profile">
-          <div class="user-pics"><img src="./image/user7.jfif" alt="user7">
-          </div>
-
-          <div class="user-profile-content">
-            <div class="title-container">
-              <div class="user-names">
-                <div class="full-name"><h1 class="main-text">pichai sundararajan #Indian</h1></div>
-                <div class="user-name"><p class="sub-text">@pichai_sundararajan</p></div>
-              </div>
-
-              <div class="follow-btn"><a href="#">follow</a></div>
-
-            </div>
-            <div class="bio-container">
-             <a href="#">♯JavascriptDeveloper</a> Avocado | Fire Speaker | Fire Teacher | Ceo of Google - <a href="#">http://bit.ly/jqqyt</a> |<a href="#"> @twilio</a> Champion | Motto: <a href="#">#LearnBuildTeach</a></p>
-            </div>
-            
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="follow-user">
-        <div class="related-followers">
-          <p class="sub-text"><i class="fas fa-user"></i> Hriktik and 50 others follow</p>
-        </div>
-
-        <div class="user-profile">
-          <div class="user-pics"><img src="./image/user8.jfif" alt="user8">
-          </div>
-
-          <div class="user-profile-content">
-            <div class="title-container">
-              <div class="user-names">
-                <div class="full-name"><h1 class="main-text">Shahrukh Khan</h1></div>
-                <div class="user-name"><p class="sub-text">@iamsrk</p></div>
-              </div>
-
-              <div class="follow-btn"><a href="#">follow</a></div>
-
-            </div>
-            <div class="bio-container">
-              <p>software engineer at 
-                <a href="#">@Bollywood</a>
-                . career switcher. vue + rails. tweeting about tech, books, startups, and big ideas. writing @ <a href="#">http://iamsrk.dev.</a></p>
-            </div>
-            
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="follow-footer">
-        <a href="#">Show more</a>
-      </div>
-
-    </section>
-
-    <div class="tweets">
-      <div class="user-pics"><img src="./image/user5.jfif" alt="user5"></div>
-      <div class="user-content-box">
-        <div class="user-names">
-          <hi class="full-name">Amitabh Bachchan</hi>
-          <p class="user-name">@amitabh_bachchan</p>
-          <p class="time"> . 6hrs</p>
-        </div>
-        
-        <div class="user-content">
-          <p>Time to settle down and play my favourite game IN THE WORLD Earth globe europe-africa</p>
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis sunt ratione!</p>
-            <img src="./image/content2.jfif" alt="content5">
-        </div>
-
-        <div class="content-icons">
-          <i class="far fa-comment blue"> 78</i>
-          <i class="fas fa-retweet green"> 265</i>
-          <i class="far fa-heart red"> 934</i>
-          <i class="fas fa-chevron-up blue"></i>
-        </div>
-
-      </div>
+    
     </div>
-
-    <div class="pagnation">
-      <a href="#">Load more</a>
-    </div>
-
-</div>
-
-
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="main.js"></script>
+    
+  </div>
+  
 </body>
-
 </html>
