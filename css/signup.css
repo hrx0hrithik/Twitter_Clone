@@ -184,6 +184,10 @@ h5 span {
   width: 418px;
   height: 120px;
 }
+.box input:focus
+{
+    border: 1px solid #00acee;
+}
 
 .box-four {
   width: 400px;
@@ -230,25 +234,36 @@ select {
 }
 
 .part-two .mdy-cls {
-  padding-bottom: 110px;
+  padding-bottom: 100px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  margin-left: 7px;
+
 }
 
 .part-two .month {
   width: 200px;
   height: 55px;
+  border-radius: 2px;
+  
 }
 
 .part-two .days {
   width: 90px;
   height: 55px;
+  margin-left: 10px;
+  border-radius: 2px;
 }
 
 .part-two .years {
   width: 100px;
   height: 55px;
+  margin-left: 10px;
+  border-radius: 2px;
 }
 
-.part-two.nxt-btn {
+.part-two .btn-nxt-btn {
   background-color: #121212;
   color: #fff;
 }
@@ -278,6 +293,16 @@ select {
   top: -31px;
   left: -8px;
 }
+
+.part-two {
+  display: none;
+}
+
+/*Third part of the code--Create account section*/
+
+
+
+
 
 @media screen and (max-width: 690px) {
 
