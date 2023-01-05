@@ -287,7 +287,7 @@ select {
   text-decoration: underline;
 }
 
-.step {
+.step-one {
   font-weight: 200;
   font-size: 14px;
   position: absolute;
@@ -299,9 +299,23 @@ select {
   display: none;
 }
 
-/*Third part of the code--Create account section*/
+/*Third part of the code--Create account  second section*/
 
 
+.step-two {
+  font-weight: 200px;
+  font-size: 14px;
+  position: absolute;
+  top: 25px;
+  left: 38px;
+  
+}
+.heading
+{
+  position: absolute;
+  top: 31px;
+  left: 85px;
+}
 .box-six .sign-up-btn {
   background-color: #00acee;
   color: #fff;
@@ -340,6 +354,7 @@ select {
   font-size: 13px;
   color: #7d8993
 }
+
 
 .box-five .phone-box,.dob-box,.name-box
 {
