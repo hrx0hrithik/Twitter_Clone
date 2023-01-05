@@ -1,23 +1,22 @@
-const moreBtn = document.querySelector('#moreBtn');
-    const subItemsBox = document.querySelector('.sub-items-box');
-    const subMenuBox = document.querySelector('.menu');
-    const overlay = document.querySelector('.overlay');
-    const profile_menu = document.querySelector('#profile_info')
+// document.addEventListener('click', e => {
+//     const isSubmenuButton = e.target.matches("[data-submenu-button]")
+//     if (!isSubmenuButton && e.target.closest('[data-submenu]') != null) return
 
-    moreBtn.addEventListener('click', function () {
-      subItemsBox.classList.add('active');
-      overlay.classList.add('active');
-    });
+//     let currentSubmenu
+//     if(isSubmenuButton) {
+//         currentSubmenu =e.target.closest('[data-submenu]')
+//         currentSubmenu.classList.toggle('active')
+//     }
 
-    profile_menu.addEventListener('click', function () {
-      subMenuBox.classList.add('active');
-      overlay.classList.add('active');
-    });
+//     document.querySelectorAll("[data-submenu].active").forEach(submenu => {
+//         if (submenu === currentSubmenu) return
+//         submenu.classList.remove('active')
+//     })
+// })
 
-    overlay.addEventListener('click', function () {
-      subItemsBox.classList.remove('active');
-      subMenuBox.classList.remove('active');
-      overlay.classList.remove('active');
-    })
-
-    
+const click = document.querySelector('.profile-box');
+const menu = document.querySelector('.profile-menu');
+click.addEventListener("click", function() {
+    menu.classList.toggle('activate');
+    console.log("clicked");
+})
