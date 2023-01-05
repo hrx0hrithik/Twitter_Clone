@@ -153,6 +153,7 @@ h5 span {
 /* p{
   text-align: center;
 } */
+
 .acc-already {
   color: rgb(138, 136, 136);
   font-size: 0.9rem;
@@ -286,7 +287,7 @@ select {
   text-decoration: underline;
 }
 
-.step {
+.step-one {
   font-weight: 200;
   font-size: 14px;
   position: absolute;
@@ -298,16 +299,79 @@ select {
   display: none;
 }
 
-/*Third part of the code--Create account section*/
+/*Third part of the code--Create account  second section*/
+
+
+.step-two {
+  font-weight: 200px;
+  font-size: 14px;
+  position: absolute;
+  top: 25px;
+  left: 38px;
+  
+}
+.heading
+{
+  position: absolute;
+  top: 31px;
+  left: 85px;
+}
+.box-six .sign-up-btn {
+  background-color: #00acee;
+  color: #fff;
+}
+
+.sign-up-btn {
+  width: 400px;
+  height: 40px;
+  background-color: #fff;
+  outline: none;
+  font-weight: bold;
+  border: 1px solid rgb(211, 210, 210);
+  border-radius: 20px;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 95px;
+}
+
+.box-five input {
+  position: relative;
+  width: 400px;
+  height: 55px;
+  outline: none;
+  border: 1px solid rgb(211, 210, 210);
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-left: 95px;
+}
+
+.second-brief-cls {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-right: 20px;
+  padding-left: 30px;
+  font-size: 13px;
+  color: #7d8993
+}
+
+
+.box-five .phone-box,.dob-box,.name-box
+{
+  padding-top: 30px;
+}
 
 
 
 
 
-@media screen and (max-width: 690px) {
+
+@media screen and (max-width: 690px) 
+{
 
   /*media query should be in the last*/
-  body {
+  body 
+  {
     background-color: #fff;
   }
 
