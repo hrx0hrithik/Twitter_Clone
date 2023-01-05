@@ -108,6 +108,61 @@ ul {
   margin-top: -1rem;
 }
 
+.more-menu {
+  position: absolute;
+  font-size: 15px;
+  bottom: 20%;
+  left: 10%;
+  width: 265px;
+  border-radius: 11px;
+  overflow: scroll;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  display: none;
+}
+
+.more-menu a {
+  font-size: 13px;
+  padding: 0px;
+  font-weight: 200;
+}
+
+.more-menu a:hover{
+  background: transparent;
+  color: black;
+  padding: 0;
+}
+
+  ul.sub-bottom li:hover{
+  color: black;
+  background-color:#f5f8fa;
+  padding: 0px;
+  border-radius: 0;
+}
+.more-menu .menu-top{
+  font-size: 19px;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.more-menu .menu-top:hover, .menu-bottom:hover{
+  background-color: #f5f8fa;
+  cursor: pointer;
+}
+.more-menu .menu-bottom{
+  font-weight: 400;
+  padding: 2px;
+}
+
+ul.sub-bottom{
+  /* display: none; */
+}
+
+.more-menu input{
+  display: none;
+}
+
 .tweet a {
   display: block;
   margin: auto;
@@ -130,9 +185,10 @@ ul {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 7.5rem;
   align-self: center;
   padding: 0 0.6rem;
+
 }
 
 .profile-box:hover {
@@ -161,21 +217,41 @@ ul {
 }
 
 .profile-menu {
-  font-size: 15px;
-  line-height: 0;
   position: absolute;
+  font-size: 15px;
   bottom: 8%;
-  left: 40%;
-  border-radius: 0.3rem;
+  left: 10%;
+  width: 265px;
+  border-radius: 11px;
+  overflow: hidden;
   background-color: #fff;
-  padding: 0.75rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
   display: none;
 }
 
-.profile-menu .activate{
+.activated {
+  opacity: 1;
   display: block;
-  font-size: 20px;
+}
+
+.menu-item {
+  padding: 14px 20px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.menu-item a {
+  color: black;
+}
+
+.menu-item:hover {
+  background-color: #198ed6;
+}
+
+.menu-item:hover a {
+  color: white;
 }
 
 .user-name {
@@ -494,7 +570,7 @@ ul {
 }
 
 .header i {
-  color: rgba(29, 161, 242, 1.00);
+  color: black;
   background: rgb(245, 248, 250);
   padding: 0.5rem;
   border-radius: 50%

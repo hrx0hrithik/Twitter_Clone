@@ -14,9 +14,15 @@
 //     })
 // })
 
-const click = document.querySelector('.profile-box');
-const menu = document.querySelector('.profile-menu');
-click.addEventListener("click", function() {
-    menu.classList.toggle('activate');
-    console.log("clicked");
+const profileBtn = document.querySelector('.profile-box');
+const moreBtn = document.querySelector('#more-btn');
+const profileMenu = document.querySelector('.profile-menu');
+const moreMenu = document.querySelector('.more-menu')
+profileBtn.addEventListener("click", function() {
+    profileMenu.classList.toggle("activated");
+    // console.log("clicked");
+});
+moreBtn.addEventListener("click", function (){
+    moreMenu.classList.toggle("activated");
+     console.log("clicked");
 })
