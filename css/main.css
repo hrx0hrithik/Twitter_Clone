@@ -156,11 +156,11 @@ ul {
 }
 
 ul.sub-bottom{
-  /* display: none; */
+  display: none;
 }
 
-.more-menu input{
-  display: none;
+ul.show{
+  display: block;
 }
 
 .tweet a {
@@ -240,6 +240,7 @@ ul.sub-bottom{
   font-family: inherit;
   font-size: 15px;
   font-weight: 650;
+  cursor: pointer;
 }
 
 .menu-item a {
