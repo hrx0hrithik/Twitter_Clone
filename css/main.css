@@ -116,19 +116,26 @@ ul {
   left: 10%;
   width: 265px;
   border-radius: 11px;
-  overflow: scroll;
+  overflow: auto;
   background-color: #fff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  line-height: 2.5;
   opacity: 0;
   display: none;
 }
 
+.moremenu i{
+  font-size: 13px ;
+  float: right;
+  padding-top: 6px;
+}
 
 
 .moremenu a {
-  font-size: 13px;
-  padding: 0px;
-  font-weight: 200;
+  font-weight: 400;
+  padding: 0px 0px;
+  font-size: 16px;
 }
 
 .moremenu a:hover{
@@ -137,7 +144,7 @@ ul {
   padding: 0;
 }
 
-  ul.sub-bottom li:hover{
+ul.sub-bottom li:hover{
   color: black;
   background-color:#f5f8fa;
   padding: 0px;
@@ -145,8 +152,12 @@ ul {
 }
 .moremenu .menu-top{
   font-size: 19px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 5px;
+}
+.menu-top .material-symbols-outlined{
+  padding-right: 25px;
+  padding-left: 6px;
 }
 
 .moremenu .menu-top:hover, .menu-bottom:hover{
@@ -154,8 +165,21 @@ ul {
   cursor: pointer;
 }
 .moremenu .menu-bottom{
-  font-weight: 400;
-  padding: 2px;
+  font-weight: 600;
+  padding: 6px;
+}
+div.moremenu div.creator-btn{
+  padding-top: 10px;
+}
+
+ul.sub-bottom span.material-symbols-outlined{
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.options-icon .material-symbols-outlined{
+  font-size: 27px;
+  font-weight: 900;
 }
 
 ul.sub-bottom{
@@ -195,7 +219,7 @@ button{
   width: 80%;
 }
 button:hover {
-  background: rgba(29, 161, 242, 0.1);
+  background:#bdc3c85c;
   cursor: pointer;
 }
 
