@@ -17,8 +17,8 @@
 <body>
 
   <div class="main-flex-container">
-    <div class="left-flex-container flex-item ">
-      <div class="nav-links">
+    <div class="left-flex-container flex-item dropdown">
+      <div class="nav-links" data-moremenu>
         <ul>
           <li class="nav-items logo"><a href="#"><i class="fab fa-twitter"></i></a></li>
           <li class="nav-items current-page"><a href="#"><i class="fas fa-home"></i> Home</a></li>
@@ -28,11 +28,11 @@
           <li class="nav-items"><a href="#"><i class="far fa-bookmark"></i> Bookmarks</a></li>
           <li class="nav-items"><a href="#"><i class="far fa-list-alt"></i> Lists</a></li>
           <li class="nav-items"><a href="#"><i class="far fa-user"></i> Profile</a></li>
-          <li class="nav-items">
-            <a id="more-btn" href="#"><i class="fas fa-ellipsis-h more-icon"></i> More</a>
+          <li class="nav-items" data-moremenu-btn>
+            <a id="more-btn" href="#" data-moremenu-btn><i class="fas fa-ellipsis-h more-icon" data-moremenu-btn></i> More</a>
           </li>
         </ul>
-        <div class="more-menu">
+        <div class="moremenu">
           <div>
             <a href="#">
               <div class="menu-top">Topics</div>
@@ -44,27 +44,48 @@
           <hr>
           <ul>
             <li>
-              <div class="creator-btn menu-bottom">Creator Studio<span class="material-symbols-outlined">keyboard_arrow_down</span></div>
+              <div class="creator-btn menu-bottom">Creator Studio<span
+                  class="material-symbols-outlined">keyboard_arrow_down</span></div>
               <ul class="sub-bottom creator-menu">
-                <li><a href="#">Newsletter</a></li>
-                <li><a href="#">Analytics</a></li>
+                <a href="#">
+                  <li>Newsletter</li>
+                </a>
+                <a href="#">
+                  <li>Analytics</li>
+                </a>
               </ul>
             </li>
             <li>
-              <div class="pro-btn menu-bottom">Professional Tools<span class="material-symbols-outlined">keyboard_arrow_down</span></div>
+              <div class="pro-btn menu-bottom">Professional Tools<span
+                  class="material-symbols-outlined">keyboard_arrow_down</span></div>
               <ul class="sub-bottom pro-menu">
-                <li><a href="#">Twitter for Professional</a></li>
-                <li><a href="#">Twitter Ads</a></li>
-                <li><a href="#">Monitization</a></li>
+                <a href="#">
+                  <li>Twitter for Professional</li>
+                </a>
+                <a href="#">
+                  <li>Twitter Ads</li>
+                </a>
+                <a href="#">
+                  <li>Monitization</li>
+                </a>
               </ul>
             </li>
             <li>
-              <div class="setting-btn menu-bottom">Setting and Support<span class="material-symbols-outlined">keyboard_arrow_down</span></div>
+              <div class="setting-btn menu-bottom">Setting and Support<span
+                  class="material-symbols-outlined">keyboard_arrow_down</span></div>
               <ul class="sub-bottom setting-menu">
-                <li><a href="#">Setting and privacy</a></li>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Display</a></li>
-                <li><a href="#">Keybord shortcuts</a></li>
+                <a href="#">
+                  <li>Setting and privacy</li>
+                </a>
+                <a href="#">
+                  <li>Help Center</li>
+                </a>
+                <a href="#">
+                  <li>Display</li>
+                </a>
+                <a href="#">
+                  <li>Keybord shortcuts</li>
+                </a>
               </ul>
             </li>
           </ul>
@@ -72,17 +93,19 @@
       </div>
       <div class="tweet"><a href="#">Tweet</a></div>
       <!-- Profile Button -->
-      <div class="profile-box">
-        <img src="./image/messi.jfif" alt="profile">
-        <div class="profile-link">
-          <p class="full-name">Lionel Messi</p>
-          <p class="user-name">@LM10</p>
+      <div class="profile-box dropdown" data-dropdown>
+        <button class="link" data-dropdown-btn>
+          <img src="./image/messi.jfif" alt="profile" data-dropdown-btn>
+          <div class="profile-link" data-dropdown-btn>
+            <p class="full-name" data-dropdown-btn>Lionel Messi</p>
+            <p class="user-name" data-dropdown-btn>@LM10</p>
+          </div>
+          <div class="options-icon" data-dropdown-btn><i class="fas fa-caret-down" data-dropdown-btn></i></div>
+        </button>
+        <div class="profile-menu dropdown-menu">
+          <div class="menu-item"><a href="#">Add an exixting account</a></div>
+          <div class="menu-item"><a href="#">Log out @LM10</a></div>
         </div>
-        <div class="options-icon"><i class="fas fa-caret-down"></i></div>
-      </div>
-      <div class="profile-menu">
-        <div class="menu-item"><a href="#">Add an exixting account</a></div>
-        <div class="menu-item"><a href="#">Log out @LM10</a></div>
       </div>
     </div>
 

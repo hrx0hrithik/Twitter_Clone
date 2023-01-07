@@ -16,11 +16,6 @@ a {
   text-decoration: none;
 }
 
-img:hover,
-.full-name:hover,
-.user-name:hover {
-  cursor: pointer;
-}
 
 ul {
   list-style: none;
@@ -108,7 +103,13 @@ ul {
   margin-top: -1rem;
 }
 
-.more-menu {
+.nav-links.active > .moremenu{
+  opacity: 1;
+  display: block;
+  pointer-events: auto;
+}
+
+.moremenu {
   position: absolute;
   font-size: 15px;
   bottom: 20%;
@@ -122,13 +123,15 @@ ul {
   display: none;
 }
 
-.more-menu a {
+
+
+.moremenu a {
   font-size: 13px;
   padding: 0px;
   font-weight: 200;
 }
 
-.more-menu a:hover{
+.moremenu a:hover{
   background: transparent;
   color: black;
   padding: 0;
@@ -140,17 +143,17 @@ ul {
   padding: 0px;
   border-radius: 0;
 }
-.more-menu .menu-top{
+.moremenu .menu-top{
   font-size: 19px;
   font-weight: 500;
   padding: 5px;
 }
 
-.more-menu .menu-top:hover, .menu-bottom:hover{
+.moremenu .menu-top:hover, .menu-bottom:hover{
   background-color: #f5f8fa;
   cursor: pointer;
 }
-.more-menu .menu-bottom{
+.moremenu .menu-bottom{
   font-weight: 400;
   padding: 2px;
 }
@@ -179,29 +182,43 @@ ul.show{
   color: #fff;
   background: #198ed6;
 }
-
-.profile-box {
+ /* Profile button */
+button{
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 7.5rem;
   align-self: center;
-  padding: 0 0.6rem;
-
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 3px;
+  width: 80%;
+}
+button:hover {
+  background: rgba(29, 161, 242, 0.1);
+  cursor: pointer;
 }
 
-.profile-box:hover {
-  background: rgba(29, 161, 242, 0.1);
-  border-radius: 25px;
-  cursor: pointer;
+div.profile-link{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-box {
+  
+  margin-top: 7.5rem;
+  padding: 0 0.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
 }
 
 .profile-box img {
   display: block;
   width: 45px;
   height: 45px;
-  margin: auto;
   border-radius: 100%;
   margin-right: 0.5rem;
 }
@@ -217,6 +234,7 @@ ul.show{
 }
 
 .profile-menu {
+/* .dropdown-menu{ */
   position: absolute;
   font-size: 15px;
   bottom: 8%;
@@ -228,11 +246,14 @@ ul.show{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   opacity: 0;
   display: none;
+  pointer-events: none;
 }
 
-.activated {
+
+.dropdown.active .link + .dropdown-menu {
   opacity: 1;
   display: block;
+  pointer-events: auto;
 }
 
 .menu-item {
@@ -364,6 +385,8 @@ ul.show{
   color: #fff;
   border-radius: 25px;
   margin-right: 1rem;
+  display: block;
+  width: inherit;
 }
 
 .form-group-2 .btn:hover {

@@ -1,8 +1,6 @@
 
-const profileBtn = document.querySelector('.profile-box');
-const moreBtn = document.querySelector('#more-btn');
-const profileMenu = document.querySelector('.profile-menu');
-const moreMenu = document.querySelector('.more-menu');
+// const moreBtn = document.querySelector('#more-btn');
+// const moreMenu = document.querySelector('.more-menu');
 
 
 const creatorBtn = document.querySelector('.creator-btn');
@@ -12,38 +10,60 @@ const showPro = document.querySelector('.pro-menu');
 const settingBtn = document.querySelector('.setting-btn');
 const showSetting = document.querySelector('.setting-menu');
 
-proBtn.addEventListener("click", function(){
+proBtn.onclick = function () {
     showPro.classList.toggle("show");
-})
-settingBtn.addEventListener("click", function(){
+}
+settingBtn.onclick = function(){
     showSetting.classList.toggle("show");
-})
-creatorBtn.addEventListener("click", function(){
+}
+creatorBtn.onclick = function(){
     showCreator.classList.toggle("show"); 
-})
+}
 
 
 
-profileBtn.addEventListener("click", function() {
-    profileMenu.classList.toggle("activated");
-});
-moreBtn.addEventListener("click", function (){
-    moreMenu.classList.toggle("activated");
-})
+
+// moreBtn.onclick =function (){
+//     moreMenu.classList.add("active");
+// }
 
 
-// document.addEventListener('click', e => {
-//     const isSubmenuButton = e.target.matches("[data-submenu-button]")
-//     if (!isSubmenuButton && e.target.closest('[data-submenu]') != null) return
-
-//     let currentSubmenu
-//     if(isSubmenuButton) {
-//         currentSubmenu =e.target.closest('[data-submenu]')
-//         currentSubmenu.classList.toggle('active')
+// window.addEventListener('mouseup', function(e){
+//     // var box = document.getElementById('menu');
+//     if(e.target != moreMenu && e.target != profileMenu){
+//         // moreMenu.classList.remove("active");
+//         console.log("remove");
 //     }
-
-//     document.querySelectorAll("[data-submenu].active").forEach(submenu => {
-//         if (submenu === currentSubmenu) return
-//         submenu.classList.remove('active')
-//     })
 // })
+
+document.addEventListener('click', e => {
+    const isDropdownBtn = e.target.matches("[data-dropdown-btn]")
+    if (!isDropdownBtn && e.target.closest('[data-dropdown]') != null) return
+
+    let currentDropdown
+    if(isDropdownBtn) {
+        currentDropdown =e.target.closest('[data-dropdown]')
+        currentDropdown.classList.toggle('active')
+    }
+
+    document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+        if (dropdown === currentDropdown) return
+        dropdown.classList.remove('active')
+    })
+})
+
+
+document.addEventListener('click', e => {
+    const isMoremenuBtn = e.target.matches("[data-moremenu-btn]")
+    if (!isMoremenuBtn && e.target.closest('[data-moremenu]') != null) return
+
+    let currentMoremenu
+    if(isMoremenuBtn) {
+        currentMoremenu =e.target.closest('[data-moremenu]')
+        currentMoremenu.classList.toggle('active')
+    }
+    document.querySelectorAll("[data-moremenu].active").forEach(moremenu => {
+        if (moremenu === currentMoremenu) return
+        moremenu.classList.remove('active')
+    })
+})
