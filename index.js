@@ -35,7 +35,7 @@ function getUserValue() {
 passwordField.addEventListener("keypress", (e) => {
     console.log(e.currentTarget.value);
      const value = e.currentTarget.value;
-     if(value === "" || value === " "){
+     if(value === 'null' || value === " "){
          loginBtn.disabled = true;
          loginBtn.classList.replace("login-btn","login-btn-dis");
 

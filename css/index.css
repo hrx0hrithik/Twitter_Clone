@@ -18,6 +18,14 @@ body
     align-items:center;
     font-family: 'Cabin', sans-serif;
 }
+/* Part one */
+.container .cross{
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  color: black;
+}
+
 .fa-twitter{
   position: absolute;
   top: 10px;
@@ -32,28 +40,27 @@ body
   display: none;
 }
 
-.part-two{
-  display: none;
-}
-.part-two.active{
-  display: block;
-}
-
 .box, .box button
 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .box-one{
   margin-top: -50px;
 }
 .box
 {
-    width: 400px;
-    height: 240px;
-    align-items: center;
-    flex-direction:column ;
-    justify-content: space-evenly;
+  width: 400px;
+  height: 240px;
+  align-items: center;
+  flex-direction:column ;
+  justify-content: space-evenly;
+}
+.part-two{
+  display: none;
+}
+.part-two.active{
+  display: block;
 }
 .box-three
 {
@@ -89,13 +96,13 @@ body
 }
 .box-two input
 {
-    position: relative;
-    width: 300px;
-    height: 55px;
-    outline: none;
-    border: 1px solid rgb(211,210,210);
-    border-radius: 4px;
-    padding-left: 10px;
+  position: relative;
+  width: 300px;
+  height: 55px;
+  outline: none;
+  border: 1px solid rgb(211,210,210);
+  border-radius: 4px;
+  padding-left: 10px;
 
 }
 .box-two input label
@@ -106,12 +113,11 @@ body
 .box-two input::placeholder
 {
   font-size: 1rem;
-
 }
 
 .box-two input:focus
 {
-    border: 1px solid #00acee;
+  border: 1px solid #00acee;
 }
 .box-two .next-btn
 {
@@ -121,7 +127,6 @@ body
 .box-two .next-btn:hover
 {
   background-color:rgb(39,44,48); 
-   
 }
 .login-btn
 {
@@ -138,6 +143,7 @@ body
   top: 45px;
   cursor: pointer;
 }
+
 .login-btn-dis{
   width: 400px; 
   height: 40px;
@@ -171,7 +177,6 @@ body
 .box-three input::placeholder
 {
   font-size: 1rem;
-
 }
 
 .box-three input:focus

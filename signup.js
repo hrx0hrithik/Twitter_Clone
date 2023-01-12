@@ -62,3 +62,47 @@
 //       pass: pass,
 //     });
 //   }
+
+
+
+
+
+
+
+const stepTwoNextBtn = document.getElementById('signup');
+const partOne = document.querySelector('.part-one-cls');
+const partTwo = document.querySelector('.part-two');
+const useEmail = document.querySelector('.use-email');
+const phoneOrMail = document.querySelector('#email-or-phn');
+const usePhone = document.querySelector('.use-phn');
+const nextOne = document.querySelector('#nxt-1');
+const partThree = document.querySelector('.part-three');
+const tnc = document.querySelector('.tnc');
+
+stepTwoNextBtn.addEventListener('click', function () {
+    partOne.classList.remove('active');
+    partTwo.classList.add('active');
+    // console.log('Next');
+});
+
+useEmail.addEventListener('click', function(){
+    phoneOrMail.placeholder = 'Email';
+    phoneOrMail.type = "email";
+    useEmail.innerText = '';
+    usePhone.innerText = 'Use phone insted';
+    // console.log('phn');
+});
+
+usePhone.addEventListener('click', function(){
+    phoneOrMail.placeholder = 'Phone';
+    phoneOrMail.type = "tel";
+    usePhone.innerText = '';
+    useEmail.innerText = 'Use email insted';
+    // console.log('email');
+});
+
+nextOne.addEventListener('click', function () {
+    partTwo.classList.remove('active');
+    tnc.classList.add('active');
+    console.log('Next');
+});

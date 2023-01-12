@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,600,0,0" />
     <title>Twitter log in page</title>
     <link rel="stylesheet" href="./css/index.css">
 
@@ -17,8 +18,9 @@
 
 <body>
     <div class="container">
-        <i class="fab fa-twitter"><a href="main.html"><img src="image/icons8-twitter-48.png" width="36"></a></i>
+        <i class="fab fa-twitter"><img src="image/icons8-twitter-48.png" width="36"></i>
         <!-- First part start here -->
+        <a class="cross" href="main.html"><span class="material-symbols-outlined">close</span></a>
         <div class="part-one">
             <div class="box box-one">
 
@@ -42,13 +44,13 @@
             <h5><span>or</span></h5>
             <div class="box box-two">
 
-                <form action="#" novalidate>
+                <form>
                     <label for="userId"></label>
-                    <input autocomplete="off" type="text" id="userId" placeholder="Phone,email, or username" required />
+                    <input autocomplete="off" type="text" id="userId" required placeholder="Phone,email, or username" />
                     <br><br>
-                    <button type="button" class="btn next-btn" onclick="getUserValue()">Next</button>
+                    <button class="btn next-btn" onclick="getUserValue()">Next</button>
                 </form>
-                <button type="button" class="btn forget">Forgot password?</button>
+                <a href="404.html" style="text-decoration: none;"><button type="button" class="btn forget">Forgot password?</button></a>
             </div>
 
         </div>

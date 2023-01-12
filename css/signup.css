@@ -18,14 +18,20 @@ body {
   font-family: 'Cabin', sans-serif;
 
 }
+.cross{
+  position: fixed;
+    top: 13px;
+    left: 16px;
+    color: black;
+}
 
 .fa-twitter {
   position: absolute;
-  top: 10px;
+    top: 10px;
+    left: 275px;
 }
 
-.box,
-.box button {
+.box {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -33,7 +39,7 @@ body {
 
 .box-one {
   width: 300px;
-  height: 160px;
+  height: 200px;
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
@@ -58,6 +64,8 @@ body {
   border-radius: 20px;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+    align-items: center;
 }
 
 .box-one button img {
@@ -175,12 +183,20 @@ h5 span {
 
 
 .part-two {
+  display: none;
+}
+.part-two {
   width: 400px;
   height: 0px;
   position: absolute;
   top: 50px;
 }
 
+.container .back-2{
+  position: absolute;
+  left: 11px;
+  top: 20px;
+}
 .box-three {
   width: 418px;
   height: 120px;
@@ -188,6 +204,11 @@ h5 span {
 .box input:focus
 {
     border: 1px solid #00acee;
+}
+
+#use-instd{
+  right: -150px;
+    position: relative;
 }
 
 .box-four {
@@ -291,16 +312,33 @@ select {
   font-weight: 200;
   font-size: 14px;
   position: absolute;
-  top: -31px;
-  left: -8px;
+  top: -33px;
+  left: -40px;
 }
 
-.part-two {
+/* Terms and condition */
+
+.tnc{
   display: none;
+}
+.tnc button{
+  width: 400px;
+    height: 40px;
+    background-color: #121212;
+    color: #fff;
+    outline: none;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.tnc button:hover{
+  background-color: rgb(39, 44, 48);
 }
 
 /*Third part of the code--Create account  second section*/
 
+.part-three{
+  display: none;
+}
 
 .step-two {
   font-weight: 200px;
@@ -348,8 +386,7 @@ select {
 .second-brief-cls {
   padding-top: 80px;
   padding-bottom: 10px;
-  padding-right: 10px;
-  padding-right: 20px;
+  padding-right: 14px;
   padding-left: 30px;
   font-size: 13px;
   color: #7d8993
@@ -361,9 +398,9 @@ select {
   padding-top: 30px;
 }
 
-
-
-
+.active{
+  display: block;
+}
 
 
 @media screen and (max-width: 690px) 

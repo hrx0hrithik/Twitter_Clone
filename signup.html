@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./image/twitter.jfif" type="image/jfif">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,600,0,0" />
     <link rel="stylesheet" href="./css/signup.css">
     <title>Twitter</title>
 </head>
@@ -13,10 +15,10 @@
 <body>
 
     <div class="container">
-
         <!-- Part one starts here -->
-        <div class="part-one-cls">
-            <i class="fab fa-twitter"><a href="main.html"><img src="image/icons8-twitter-48.png" width="36"></a></i>
+        <div class="part-one-cls active">
+            <a class="cross" href="main.html"><span class="material-symbols-outlined">close</span></a>
+            <i class="fab fa-twitter"><img src="image/icons8-twitter-48.png" width="36"></i>
             <div class="box box-one">
                 <h2> Join Twitter Today </h2>
 
@@ -38,11 +40,11 @@
             <h5><span>or</span></h5>
 
             <div class="box box-two">
-                <button class=" btn next-btn " id="email_phone"><span>Sign up with phone or email</span></button>
+                <button class=" btn next-btn " id="signup"><span>Sign up with phone or email</span></button>
 
 
-                <p class="signup-term">By signing up, you agree to the <a href="#">Terms of service</a> <br>
-                    and <a href="#">Privacy policy</a>,includng<a href="#">Cookie Use.</a>
+                <p class="signup-term">By signing up, you agree to the <a href="404.html">Terms of service</a> <br>
+                    and <a href="404.html">Privacy policy</a>,includng<a href="404.html">Cookie Use.</a>
                 </p>
             </div>
             <br>
@@ -52,52 +54,73 @@
         <!-- Part Two Starts here -->
 
         <div class="part-two"> <!-- Its already in a container, no need add 2nd container -->
+            <a class="cross" href="main.html"><span class="material-symbols-outlined">close</span></a>
             <span class="step-one">Step 1 of 5</span>
             <h2>Create your Account</h2>
             <div class="box-three">
                 <form>
                     <div class="box">
                         <input type="text" required placeholder="Name"><br>
-                        <input type="text" required placeholder="Phone">
-                        <a class="use-insted" href="#">Use email insted</a>
+                        <input id="email-or-phn" type="tel" required placeholder="Phone">
+                        <div id="use-instd"><a class="use-email" href="#">Use email insted</a><a class="use-phn"></a></div>
                     </div>
 
                     <h4 class="dob-cls">Date of birth</h4>
                     <div class="box-four">
 
                         <p class="brief-cls">This will not be shown publicly.Confirm tour own age,even if this account
-                            is
-                            for a business,a
-                            pet,or
-                            something else.</p>
-
+                            is for a business,a pet,or something else.</p>
                         <section class="mdy-cls">
-                            <select name="month" class="month">
+                            <select name="month" class="month" required>
                                 <option value="month">Month</option>
                             </select>
 
-                            <select name="days" class="days">
+                            <select name="days" class="days" required>
                                 <option value="days">Days</option>
                             </select>
 
-                            <select name="years" class="years">
+                            <select name="years" class="years" required>
                                 <option value="years">Years</option>
                             </select>
 
                         </section>
 
-                        <button class="btn-nxt-btn">Next</button>
+                        <button class="btn-nxt-btn" id="nxt-1">Next</button>
 
                     </div>
                 </form>
             </div>
         </div>
-    
+        <!-- Terms and condition check -->
+        <div class="tnc">
+            <span>Step 2 of 5</span>
+            <span class="material-symbols-outlined back-2">arrow_back</span>
+            <div class="tnc-box">
+            <h2>Customise your experiense</h2>
+            <p><b>Track where you see Twitter content accross the web</b><br>
+                Twitter uses this data to personalize your experience. This web browsing history will never be stored with your name, email, or phone number.</p>
+                <input type="checkbox"> <br>
+                <p class="second-brief-cls">By signing up,you afree to the <a href="404.html">Terms of Services
+                </a>and <a href="404.html">Privacy
+                    Policy</a>,including <a href="404.html">Cookie Use.</a>Twitter may use your contact
+                information,including your email address and phone number for purposes outlined in our Privacy
+                Policy,like keeping your account secure and personalizing our services,including ads. <a
+                    href="404.html">Learn more.</a>Others will be able to find you by email or phone number,when
+                provided,unless you choose otherwise <a href="#">here.</a>
+            </p>
+            <button id="nxt-2">Next</button>
+            </div>
+
+        </div>
+
         <!-- Part three Starts here -->
 
         <div class="part-three">
-            <span class="step-two">Step 2 of 5</span>
-            <span class="heading"><h2>Create your Account</h2></span>
+            <span class="material-symbols-outlined back-2">arrow_back</span>
+            <span class="step-two">Step 3 of 5</span>
+            <span class="heading">
+                <h2>Create your Account</h2>
+            </span>
             <form>
                 <div class="box-five">
                     <div class="name-box"><input type="text" placeholder="Name" disabled></div>
@@ -109,11 +132,12 @@
 
                 <div class="box-six">
 
-                    <p class="second-brief-cls">By signing up,you afree to the <a href="#">Terms of Services </a>and <a href="#">Privacy
-                            Policy</a>,including <a href="#">Cookie Use.</a>Twitter may use your contact
+                    <p class="second-brief-cls">By signing up,you afree to the <a href="404.html">Terms of Services
+                        </a>and <a href="404.html">Privacy
+                            Policy</a>,including <a href="404.html">Cookie Use.</a>Twitter may use your contact
                         information,including your email address and phone number for purposes outlined in our Privacy
                         Policy,like keeping your account secure and personalizing our services,including ads. <a
-                            href="#">Learn more.</a>Others will be able to find you by email or phone number,when
+                            href="404.html">Learn more.</a>Others will be able to find you by email or phone number,when
                         provided,unless you choose otherwise <a href="#">here.</a>
                     </p>
 
@@ -123,7 +147,7 @@
             </form>
 
         </div>
-
+<script src="signup.js"></script>
 </body>
 
 </html>
