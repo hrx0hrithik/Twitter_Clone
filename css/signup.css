@@ -338,6 +338,7 @@ select {
 
 .part-three{
   display: none;
+  padding: 20px;
 }
 
 .step-two {
