@@ -67,8 +67,6 @@
 
 
 
-
-
 const stepTwoNextBtn = document.getElementById('signup');
 const partOne = document.querySelector('.part-one-cls');
 const partTwo = document.querySelector('.part-two');
@@ -76,8 +74,11 @@ const useEmail = document.querySelector('.use-email');
 const phoneOrMail = document.querySelector('#email-or-phn');
 const usePhone = document.querySelector('.use-phn');
 const nextOne = document.querySelector('#nxt-1');
-const partThree = document.querySelector('.part-three');
 const tnc = document.querySelector('.tnc');
+const tncBack = document.querySelector('#tnc-back');
+const tncNext = document.querySelector('#nxt-2');
+const partThree = document.querySelector('.part-three');
+const partThreeBack = document.querySelector('#three-back');
 
 stepTwoNextBtn.addEventListener('click', function () {
     partOne.classList.remove('active');
@@ -106,3 +107,17 @@ nextOne.addEventListener('click', function () {
     tnc.classList.add('active');
     console.log('Next');
 });
+
+tncBack.addEventListener('click', function(){
+    tnc.classList.remove('active');
+    partTwo.classList.add('active');
+})
+tncNext.addEventListener('click', function(){
+    tnc.classList.remove('active');
+    partThree.classList.add('active');
+})
+
+partThreeBack.addEventListener('click', function(){
+    partThree.classList.remove('active');
+    tnc.classList.add('active');
+})
